@@ -26,9 +26,15 @@ link:reference-limitations.html["Revise la lista de limitaciones"].
 
 .Pasos
 . En la página lienzo, haga doble clic en el nombre de un entorno de trabajo ONTAP en las instalaciones.
-. Cuando se le solicite, introduzca sus credenciales de ONTAP.
 +
-Se le pedirá que inicie sesión con sus credenciales de ONTAP cada vez que abra el entorno de trabajo. Tiene la opción de guardar las credenciales para no tener que introducirlas cada vez. Si utiliza esta opción, las credenciales sólo estarán asociadas al usuario de BlueXP. No se guardan para su uso por parte de nadie más de su cuenta.
+El icono de entorno de trabajo identifica los clústeres que se detectaron directamente:
+
++
+image:screenshot-direct-discovery-we.png["Captura de pantalla del icono de entorno de trabajo que aparece en el lienzo"]
+
+. Si se le solicita, introduzca sus credenciales de ONTAP.
++
+Se le pedirá que inicie sesión con sus credenciales de ONTAP cada vez que abra el entorno de trabajo, si no guarda las credenciales. Tiene la opción de guardar las credenciales para no tener que introducirlas cada vez. Si utiliza esta opción, las credenciales sólo estarán asociadas al usuario de BlueXP. No se guardan para su uso por parte de nadie más de su cuenta.
 
 +
 image:screenshot-credentials.png["Captura de pantalla que muestra la solicitud de introducir el nombre de usuario y la contraseña de un clúster de ONTAP."]

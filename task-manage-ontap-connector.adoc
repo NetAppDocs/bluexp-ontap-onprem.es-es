@@ -16,6 +16,12 @@ summary: Si necesita realizar una gestión avanzada de un clúster local de ONTA
 [role="lead"]
 Si detectó un clúster de ONTAP en las instalaciones mediante un conector, puede crear volúmenes desde la vista estándar, use System Manager desde la vista avanzada y habilite los servicios de datos de BlueXP.
 
+En el lienzo, el icono de entorno de trabajo para un clúster que ha descubierto con un conector debe tener un aspecto similar al siguiente:
+
+image:screenshot-connector-we.png["Captura de pantalla del icono de entorno de trabajo que aparece en el lienzo"]
+
+Si se descubrió un entorno de trabajo directamente, el icono de entorno de trabajo incluye la palabra "directo".
+
 
 
 == Cree volúmenes desde la vista estándar
