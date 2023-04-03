@@ -86,7 +86,7 @@ Los siguientes cambios se introdujeron con la versión 3.9.22 del conector.
 
 Hemos introducido una nueva página general para proporcionar detalles clave sobre un clúster de ONTAP en las instalaciones. Por ejemplo, ahora puede ver detalles como la eficiencia del almacenamiento, la distribución de la capacidad y la información del sistema.
 
-También puede ver detalles sobre la integración con otros servicios cloud de NetApp que permiten la organización en niveles de datos, la replicación de datos y los backups.
+También puede ver detalles sobre la integración con otros servicios de BlueXP que habilitan la organización en niveles de datos, la replicación de datos y los backups.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png["Captura de pantalla que muestra la página Descripción general de un clúster ONTAP en las instalaciones."]
 

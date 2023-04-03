@@ -218,36 +218,42 @@ Si necesita ayuda para el uso de System Manager con ONTAP, puede consultar https
 
 == Active los servicios de datos de BlueXP
 
-Active los servicios de datos de BlueXP en sus entornos de trabajo para replicar, realizar copias de seguridad, analizar y organizar los datos por niveles.
+Permita que los servicios de datos de BlueXP en sus entornos de trabajo repliquen datos, copia de seguridad de datos, datos de nivel y más.
 
+Replicar datos:: Replique datos entre sistemas Cloud Volumes ONTAP, Amazon FSX para sistemas de archivos ONTAP y clústeres ONTAP. Elija una replicación de datos puntual, que puede ayudarle a mover datos desde y hacia el cloud, o una programación recurrente, que puede ayudarle con la recuperación ante desastres o la retención de datos a largo plazo.
++
+--
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Documentación de replicación"^]
 
+--
+Realice backups de los datos:: Realice backups de datos de su sistema ONTAP en las instalaciones a un almacenamiento de objetos de bajo coste en el cloud con Cloud Backup.
++
+--
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Documentación de Cloud Backup"^]
 
-=== Replicar datos
+--
+Analice, asigne y clasifique sus datos:: Analice sus clústeres corporativos en las instalaciones para asignar y clasificar datos e identificar información privada. Esto puede ayudarle a reducir los riesgos de seguridad y de cumplimiento de normativas, a reducir los costes de almacenamiento y a facilitar los proyectos de migración de datos.
++
+--
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Documentación de Cloud Data Sense"^]
 
-Puede replicar datos entre sistemas Cloud Volumes ONTAP y clústeres ONTAP eligiendo una replicación de datos única, que puede ayudarle a mover datos hacia y desde el cloud, o una programación recurrente, que puede ayudar con la recuperación ante desastres o la retención a largo plazo.
+--
+Organice los datos en niveles en el cloud:: Amplíe su centro de datos al cloud organizando en niveles los datos inactivos de los clústeres de ONTAP en el almacenamiento de objetos mediante Cloud Tiering.
++
+--
+https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["Documentación de Cloud Tiering"^]
 
-https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Aprenda a replicar datos"^]
+--
+Mantenga el estado, el tiempo activo y el rendimiento:: Implemente soluciones sugeridas en los clústeres de ONTAP antes de que se produzca una interrupción o un fallo.
++
+--
+https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html["Documentación de resiliencia operativa"^]
 
+--
+Identifique los clusters con baja capacidad:: Identifique los clústeres que muestran baja capacidad, revise los clústeres de capacidad actual y prevista, entre otros.
++
+--
+https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html["Documentación de eficiencia económica"^]
 
+--
 
-=== Realice backups de los datos
-
-Puede realizar backups de datos de su sistema ONTAP en las instalaciones en un almacenamiento de objetos de bajo coste en el cloud por medio de Cloud Backup. Este servicio proporciona funcionalidades de backup y restauración para protección y archivado a largo plazo de sus datos en las instalaciones y en el cloud.
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Descubra cómo realizar backups de datos en el cloud"^]
-
-
-
-=== Analice, asigne y clasifique sus datos
-
-Cloud Data Sense puede analizar sus clústeres locales corporativos para asignar y clasificar datos e identificar información privada. Esto puede ayudarle a reducir los riesgos de seguridad y de cumplimiento de normativas, a reducir los costes de almacenamiento y a facilitar los proyectos de migración de datos.
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Descubra cómo analizar, asignar y clasificar sus datos"^]
-
-
-
-=== Organice los datos en niveles en el cloud
-
-Amplíe su centro de datos al cloud organizando en niveles los datos inactivos de los clústeres de ONTAP en el almacenamiento de objetos mediante Cloud Tiering.
-
-https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["Aprenda a organizar los datos en niveles en el cloud"^]
