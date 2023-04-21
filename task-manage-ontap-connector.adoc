@@ -14,7 +14,7 @@ summary: Si necesita realizar una gestión avanzada de un clúster local de ONTA
 
 
 [role="lead"]
-Si detectó un clúster de ONTAP en las instalaciones mediante un conector, puede crear volúmenes desde la vista estándar, use System Manager desde la vista avanzada y habilite los servicios de datos de BlueXP.
+Si detectó un clúster de ONTAP en las instalaciones mediante un Connector, podrá crear volúmenes en la vista estándar, usar System Manager en la vista Avanzada y habilitar los servicios de datos de BlueXP.
 
 En el lienzo, el icono de entorno de trabajo para un clúster que ha descubierto con un conector debe tener un aspecto similar al siguiente:
 
@@ -126,7 +126,7 @@ image:screenshot_template_creating_resource_ontap.png["Captura de pantalla que m
 
 A continuación, se añade el nuevo volumen al entorno de trabajo.
 
-Además, si se implementa alguna acción secundaria en la plantilla, por ejemplo, habilitar Cloud Backup en el volumen, esa acción también se lleva a cabo.
+Además, si se implementa alguna acción secundaria en la plantilla (por ejemplo, al habilitar el backup y la recuperación de BlueXP en el volumen), también se lleva a cabo esa acción.
 
 .Después de terminar
 Si ha aprovisionado un recurso compartido CIFS, proporcione permisos a usuarios o grupos a los archivos y carpetas y compruebe que esos usuarios pueden acceder al recurso compartido y crear un archivo.
@@ -216,7 +216,7 @@ Si necesita ayuda para el uso de System Manager con ONTAP, puede consultar https
 
 
 
-== Active los servicios de datos de BlueXP
+== Habilite los servicios de BlueXP
 
 Permita que los servicios de datos de BlueXP en sus entornos de trabajo repliquen datos, copia de seguridad de datos, datos de nivel y más.
 
@@ -226,22 +226,22 @@ Replicar datos:: Replique datos entre sistemas Cloud Volumes ONTAP, Amazon FSX p
 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Documentación de replicación"^]
 
 --
-Realice backups de los datos:: Realice backups de datos de su sistema ONTAP en las instalaciones a un almacenamiento de objetos de bajo coste en el cloud con Cloud Backup.
+Realice backups de los datos:: Realice un backup de los datos desde su sistema ONTAP en las instalaciones en un almacenamiento de objetos de bajo coste en el cloud.
 +
 --
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Documentación de Cloud Backup"^]
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Documentación de backup y recuperación"^]
 
 --
 Analice, asigne y clasifique sus datos:: Analice sus clústeres corporativos en las instalaciones para asignar y clasificar datos e identificar información privada. Esto puede ayudarle a reducir los riesgos de seguridad y de cumplimiento de normativas, a reducir los costes de almacenamiento y a facilitar los proyectos de migración de datos.
 +
 --
-https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Documentación de Cloud Data Sense"^]
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Documentación de clasificación"^]
 
 --
-Organice los datos en niveles en el cloud:: Amplíe su centro de datos al cloud organizando en niveles los datos inactivos de los clústeres de ONTAP en el almacenamiento de objetos mediante Cloud Tiering.
+Organice los datos en niveles en el cloud:: Amplíe su centro de datos al cloud organizando en niveles los datos inactivos de los clústeres de ONTAP en el almacenamiento de objetos.
 +
 --
-https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["Documentación de Cloud Tiering"^]
+https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["Documentación sobre niveles"^]
 
 --
 Mantenga el estado, el tiempo activo y el rendimiento:: Implemente soluciones sugeridas en los clústeres de ONTAP antes de que se produzca una interrupción o un fallo.

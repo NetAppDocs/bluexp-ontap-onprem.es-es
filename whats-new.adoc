@@ -112,7 +112,9 @@ Si necesita realizar una gestión avanzada de un clúster local de ONTAP, puede 
 
 Esta vista avanzada está disponible como una vista previa con clústeres de ONTAP en las instalaciones que ejecutan 9.10.0 o posterior. Tenemos pensado perfeccionar esta experiencia y añadir mejoras en próximos lanzamientos. Envíenos sus comentarios mediante el chat en el producto.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advanced-view.html["Obtenga más información acerca de la vista avanzada"].
+* link:task-manage-ontap-direct.html["Conozca cómo se detectan directamente los clústeres"]
+* link:task-manage-ontap-connector.html["Aprenda a gestionar clústeres detectados con un conector"]
+
 
 
 
@@ -124,7 +126,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advance
 
 Ahora puede ver un inventario de sus clústeres de ONTAP en sus instalaciones junto con las fechas de vencimiento del hardware y los contratos de servicio. También hay más detalles disponibles sobre los clústeres.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html#viewing-cluster-information-and-contract-details["Vea cómo se ve esta información importante sobre el clúster local"]. Debe tener una cuenta del sitio de soporte de NetApp (NSS) para los clústeres, y las credenciales de NSS deben adjuntarse a su cuenta de Cloud Manager.
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-view-cluster-info.html["Descubra cómo ver esta información importante de clústeres en las instalaciones"]. Debe tener una cuenta del sitio de soporte de NetApp (NSS) para los clústeres, y las credenciales de NSS deben adjuntarse a su cuenta de Cloud Manager.
 
 
 
@@ -145,19 +147,3 @@ Las etiquetas que agregue a un volumen ahora están asociadas con la función de
 === Se ha simplificado el asistente para crear volúmenes para clústeres de ONTAP en las instalaciones
 
 Hemos rediseñado el asistente de creación de volúmenes para facilitar su uso y ahora puede elegir una política de exportación personalizada.
-
-
-
-== 8 de marzo de 2021
-
-
-
-=== Información del clúster de ONTAP en las instalaciones disponible en el servicio Active IQ
-
-* Cuando Active IQ muestra la lista de sus clústeres en las instalaciones (según su cuenta de NSS), puede hacer clic en un botón a. link:task-discovering-ontap.html#discovering-clusters-from-the-discovery-page["detecte el clúster"^] Y añádalo al lienzo de Cloud Manager. Esto facilita la gestión de todos los sistemas de almacenamiento desde Cloud Manager.
-* Cuando Active IQ determina que uno o más clústeres requieren actualizaciones de firmware, puede hacer clic en un botón a. link:task-managing-ontap.html#downloading-new-disk-and-shelf-firmware["Descargue el libro de estrategia de Ansible y actualice el firmware del clúster"^].
-* Un nuevo link:task-managing-ontap.html#viewing-on-prem-workloads-that-are-candidates-for-the-cloud["Pestaña Cloud-Ready Workloads"^] Proporciona una lista de las cargas de trabajo o los volúmenes que hemos identificado como ideales para moverlos al cloud desde sus clústeres de ONTAP en las instalaciones. Mover algunos de estos volúmenes podría reducir costes y mejorar el rendimiento y la resiliencia.
-+
-Consulte link:https://www.netapp.com/knowledge-center/what-is-lift-and-shift["¿Qué es la función de rehospedaje?"]
-
-

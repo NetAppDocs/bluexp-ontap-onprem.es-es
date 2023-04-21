@@ -31,7 +31,7 @@ Con la opción de detección directa, se le pedirá que inicie sesión con sus c
 
 * Activación de Cloud Backup
 +
-Habilite Cloud Backup en un clúster en las instalaciones directamente desde Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Aprenda cómo empezar"^]
+Habilite Cloud Backup en un clúster en las instalaciones directamente a partir del backup y la recuperación de datos de BlueXP. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Aprenda cómo empezar"^]
 
 * Actualizaciones bajo demanda
 +

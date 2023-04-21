@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-aiq-digital-advisor.html 
 keywords: concepts, active iq digital advisor, ontap 
-summary: El asesor digital de Active IQ está integrado en la interfaz de usuario de BlueXP para que pueda optimizar las operaciones, la seguridad y el rendimiento de sus clústeres de ONTAP en una única consola. 
+summary: El asesor digital de BlueXP te permite optimizar las operaciones, la seguridad y el rendimiento de tus clústeres de ONTAP. 
 ---
-= Optimice los clústeres mediante Digital Advisor
+= Optimiza los clústeres mediante el asesor digital de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: El asesor digital de Active IQ está integrado en la interfaz de usuari
 
 
 [role="lead"]
-https://www.netapp.com/services/support/active-iq/["Asesor digital"^] (Anteriormente Active IQ) está integrada en la interfaz de usuario de BlueXP para que pueda optimizar las operaciones, la seguridad y el rendimiento de sus clústeres de ONTAP en una única consola.
+El asesor digital de BlueXP te permite optimizar las operaciones, la seguridad y el rendimiento de tus clústeres de ONTAP.
 
 
 
 == Funciones
 
-Puede ver el estado general de su sistema de almacenamiento, información de alto nivel sobre el estado del sistema, inventario, planificación, actualizaciones e información valiosa a nivel de lista de observación mediante Digital Advisor.
+Puede ver el estado general de su sistema de almacenamiento, información de alto nivel sobre el estado del sistema, el inventario, la planificación, las renovaciones y la información valiosa a nivel de lista de seguimiento mediante el asesor digital de BlueXP.
 
 * Analice y optimice el estado de sus sistemas de almacenamiento
 * Obtenga información sobre todos los riesgos de sus sistemas de almacenamiento y las acciones para mitigar los riesgos
@@ -34,10 +34,10 @@ Puede ver el estado general de su sistema de almacenamiento, información de alt
 
 == Sistemas ONTAP compatibles
 
-El asesor digital proporciona información sobre todos los sistemas ONTAP y sistemas Cloud Volumes ONTAP locales de su cuenta de NSS.
+El asesor digital ofrece información para todos los sistemas de ONTAP en las instalaciones y los sistemas Cloud Volumes ONTAP asociados con su cuenta del sitio de soporte de NetApp (NSS).
 
 
 
-== Cómo funciona el Asesor Digital con BlueXP
+== Más información
 
-Consulte https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-bluexp.html["Documentación de Digital Advisor"^] para obtener más detalles.
+https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-bluexp.html["Documentación del asesor digital"^]

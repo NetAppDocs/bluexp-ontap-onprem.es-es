@@ -14,7 +14,7 @@ summary: Descubra clústeres de ONTAP en las instalaciones desde BlueXP para que
 
 
 [role="lead"]
-Descubra clústeres de ONTAP en las instalaciones desde BlueXP para que pueda empezar a gestionar volúmenes y a realizar una gestión avanzada con ONTAP System Manager, que está disponible en BlueXP.
+Descubre los clústeres de ONTAP on-premises de BlueXP para empezar a gestionar volúmenes y a realizar gestión avanzada mediante ONTAP System Manager, que está disponible en BlueXP.
 
 
 
@@ -27,7 +27,7 @@ Detección a través de un conector:: Esta opción permite gestionar clústeres 
 --
 * La vista estándar, que proporciona operaciones de volumen básicas
 * La vista avanzada, que ofrece gestión a través de System Manager (compatible con ONTAP 9.10.0 y versiones posteriores).
-* Integración con los servicios de datos de BlueXP, que proporcionan replicación de datos, backup y recuperación, clasificación de datos y organización en niveles de los datos
+* Integración con los servicios de BlueXP, que proporcionan replicación de datos, backup y recuperación, clasificación de datos y organización en niveles de los datos
 
 
 Esta opción requiere un conector, que puede instalar en un proveedor de cloud o en sus instalaciones.
@@ -80,7 +80,7 @@ Si desea organizar en niveles datos inactivos en el cloud, debe revisar los requ
 +
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Más información sobre conectores"^]
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Cambio entre conectores"^]
-** https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["Más información acerca de Cloud Tiering"^]
+** https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["Más información sobre la organización en niveles de BlueXP"^]
 
 
 * El host del conector debe permitir el acceso HTTPS de salida a través del puerto 443.
