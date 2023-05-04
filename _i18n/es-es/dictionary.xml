@@ -108,7 +108,6 @@
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">Envíe un caso no técnico en<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o cuya interoperabilidad con esta no es óptima. Revise estas limitaciones detenidamente.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">Limitaciones conocidas</block>
-  <block id="d7eb6312f68de520afbf446e19850f73" category="paragraph">BlueXP no admite algunas funciones de System Manager:</block>
   <block id="e710f9addfdf1e48c1320d497696c4fc" category="list-text">Configuración del clúster</block>
   <block id="bbbaee2173c1bbfdec1f9145d05f9f6e" category="paragraph">Después de establecer la dirección IP de administración y configurar la contraseña de administrador en un clúster de ONTAP en las instalaciones, puede detectar el clúster en BlueXP.</block>
   <block id="ef8d24c115f07ff9475a999250c2a5d8" category="list-text">Control de acceso basado en roles (solo conector)</block>
@@ -509,4 +508,8 @@
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">Aviso para BlueXP</block>
   <block id="e8a6d0f19a957eac14b9917a6c92899b" category="paragraph"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
   <block id="04bc2a96611cc493340c1c133029a56c" category="paragraph">Habilite Cloud Backup en un clúster en las instalaciones directamente a partir del backup y la recuperación de datos de BlueXP.<block ref="d78fdae783f693d400093119494a670a" category="inline-link-rx"></block></block>
+  <block id="51f9789c1f459351ccbb34c7b6043a74" category="section-title">Clústeres no compatibles</block>
+  <block id="b9dbfde306bbf057c758e6f86b276382" category="paragraph">Los clústeres de ONTAP en las instalaciones que están configurados con autenticación SAML no son compatibles con BlueXP.</block>
+  <block id="3b4a393ec2775335fff67bde36ea1a2c" category="section-title">Limitaciones de System Manager</block>
+  <block id="863293364989cec504101494f7916b90" category="paragraph">BlueXP no admite las siguientes funciones de System Manager:</block>
 </blocks>

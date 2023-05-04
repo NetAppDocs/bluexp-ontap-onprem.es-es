@@ -16,7 +16,17 @@ summary: Las limitaciones conocidas identifican plataformas, dispositivos o func
 [role="lead"]
 Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o cuya interoperabilidad con esta no es óptima. Revise estas limitaciones detenidamente.
 
-BlueXP no admite algunas funciones de System Manager:
+
+
+== Clústeres no compatibles
+
+Los clústeres de ONTAP en las instalaciones que están configurados con autenticación SAML no son compatibles con BlueXP.
+
+
+
+== Limitaciones de System Manager
+
+BlueXP no admite las siguientes funciones de System Manager:
 
 * Configuración del clúster
 +
