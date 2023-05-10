@@ -59,7 +59,7 @@ Antes de descubrir el clúster de ONTAP en las instalaciones, asegúrese de habe
 
 * Debería haber comenzado con BlueXP, que incluye el inicio de sesión y la configuración de una cuenta.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html["Aprenda a comenzar con BlueXP"^]
+https://["Aprenda a comenzar con BlueXP"^]
 
 * Necesita la dirección IP de administración del clúster y la contraseña de la cuenta de usuario administrador.
 * BlueXP detecta los clústeres de ONTAP mediante HTTPS. Si utiliza políticas de firewall personalizadas, el clúster de ONTAP debe permitir el acceso HTTPS de entrada a través del puerto 443.
@@ -78,9 +78,9 @@ La política de firewall "mgmt" predeterminada permite el acceso HTTPS entrante 
 Si desea organizar en niveles datos inactivos en el cloud, debe revisar los requisitos del conector en función de dónde tenga pensado organizar los datos inactivos.
 
 +
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Más información sobre conectores"^]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Cambio entre conectores"^]
-** https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["Más información sobre la organización en niveles de BlueXP"^]
+** https://["Más información sobre conectores"^]
+** https://["Cambio entre conectores"^]
+** https://["Más información sobre la organización en niveles de BlueXP"^]
 
 
 * El host del conector debe permitir el acceso HTTPS de salida a través del puerto 443.

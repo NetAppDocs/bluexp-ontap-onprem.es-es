@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, on-prem' 
-summary: Descubra las novedades de la gestión de clústeres de ONTAP en las instalaciones de BlueXP. 
+summary: Descubre las novedades de la gestión de clústeres de ONTAP en las instalaciones de BlueXP. 
 ---
-= Novedades de los clústeres ONTAP en las instalaciones
+= Novedades de los clústeres de ONTAP en las instalaciones
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,26 @@ summary: Descubra las novedades de la gestión de clústeres de ONTAP en las ins
 
 
 [role="lead"]
-Descubra las novedades de la gestión de clústeres de ONTAP en las instalaciones de BlueXP.
+Descubre las novedades de la gestión de clústeres de ONTAP en las instalaciones de BlueXP.
+
+
+
+== 4 de mayo de 2023
+
+
+
+=== Habilita el backup y la recuperación de datos de BlueXP
+
+A partir de ONTAP 9.13.1, puede usar System Manager (vista avanzada) para habilitar el backup y la recuperación de BlueXP si ha detectado el clúster mediante un conector. link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html["Obtén más información sobre habilitar el backup y la recuperación de datos de BlueXP"^]
+
+
+
+=== Actualizar la imagen de la versión de ONTAP y el firmware del hardware
+
+A partir de ONTAP 9.10.1, puede usar System Manager (vista avanzada) para actualizar la imagen de la versión de ONTAP y el firmware de hardware. Puedes optar por recibir actualizaciones automáticas para mantenerte actualizado, o bien realizar actualizaciones manuales desde tu equipo local o desde un servidor al que se pueda acceder mediante BlueXP. link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update["Obtenga más información sobre la actualización de ONTAP y firmware"^]
+
+
+NOTE: Si tienes un conector, no puedes realizar actualizaciones desde tu equipo local, solo desde un servidor al que se puede acceder mediante BlueXP.
 
 
 
@@ -36,7 +55,7 @@ Al iniciar el proceso de detección, BlueXP detecta el clúster de la siguiente 
 * Si no tiene un conector o si su conector no tiene una conexión con el clúster ONTAP, BlueXP utilizará automáticamente la opción de detección y administración directa.
 
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Obtenga más información sobre las opciones de detección y gestión"].
+https://["Obtenga más información sobre las opciones de detección y gestión"].
 
 
 
@@ -46,9 +65,9 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 === Guarde las credenciales de ONTAP
 
-Al abrir un entorno de trabajo de ONTAP en las instalaciones que se detectó directamente sin usar un conector, ahora tiene la opción de guardar sus credenciales de clúster de ONTAP para no tener que introducirlas cada vez que abre el entorno de trabajo.
+Al abrir un entorno de trabajo de ONTAP en las instalaciones que se detectó directamente sin usar un conector, ahora tiene la opción de guardar las credenciales del clúster de ONTAP para que no tenga que introducirlas cada vez que abra el entorno de trabajo.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-direct.html["Obtenga más información sobre esta opción."]
+https://["Obtenga más información sobre esta opción."]
 
 
 
@@ -58,17 +77,17 @@ Los siguientes cambios se introdujeron con la versión 3.9.24 del conector.
 
 
 
-=== Nueva forma de detectar clústeres de ONTAP en las instalaciones
+=== Una nueva forma de detectar clústeres de ONTAP en las instalaciones
 
-Ahora puede descubrir directamente sus clústeres de ONTAP en las instalaciones sin utilizar un conector. Esta opción solo permite la gestión del clúster mediante System Manager. No puede habilitar ningún servicio de datos BlueXP en este tipo de entorno de trabajo.
+Ahora puede detectar directamente sus clústeres de ONTAP en las instalaciones sin usar un conector. Esta opción solo permite la gestión del clúster mediante System Manager. No puede habilitar ningún servicio de datos BlueXP en este tipo de entorno de trabajo.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Obtenga más información sobre esta opción de detección y gestión"].
+https://["Obtenga más información sobre esta opción de detección y gestión"].
 
 
 
 === Volúmenes de FlexGroup
 
-Para los clústeres de ONTAP en las instalaciones que se detectan a través de un conector, la vista estándar de BlueXP ahora muestra los volúmenes de FlexGroup que se crearon mediante System Manager o la CLI de ONTAP. También puede gestionar estos volúmenes clonándolos, editando su configuración, eliminarlos y mucho más.
+Para clústeres de ONTAP en las instalaciones que se detectan a través de un conector, la vista estándar de BlueXP ahora muestra los volúmenes FlexGroup que se crearon a través de System Manager o la CLI de ONTAP. También puede gestionar estos volúmenes clonándolos, editando su configuración, eliminarlos y mucho más.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-flexgroup-volumes.png["Captura de pantalla que muestra un volumen FlexGroup en la página Volumes de un clúster ONTAP en las instalaciones."]
 
@@ -124,9 +143,9 @@ Esta vista avanzada está disponible como una vista previa con clústeres de ONT
 
 === Hay una ficha "On-Prem ONTAP" disponible en la cartera digital
 
-Ahora puede ver un inventario de sus clústeres de ONTAP en sus instalaciones junto con las fechas de vencimiento del hardware y los contratos de servicio. También hay más detalles disponibles sobre los clústeres.
+Ahora puedes ver un inventario de tus clústeres de ONTAP on-premises junto con sus fechas de caducidad de los contratos de hardware y servicio. También hay más detalles disponibles sobre los clústeres.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-view-cluster-info.html["Descubra cómo ver esta información importante de clústeres en las instalaciones"]. Debe tener una cuenta del sitio de soporte de NetApp (NSS) para los clústeres, y las credenciales de NSS deben adjuntarse a su cuenta de Cloud Manager.
+https://["Descubra cómo ver esta información importante de clústeres en las instalaciones"]. Debe tener una cuenta del sitio de soporte de NetApp (NSS) para los clústeres, y las credenciales de NSS deben adjuntarse a su cuenta de Cloud Manager.
 
 
 
@@ -134,16 +153,6 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-view-cluster-info.
 
 
 
-=== Las etiquetas que agrega a los volúmenes en clústeres de ONTAP en las instalaciones se pueden utilizar con el servicio de etiquetado
+=== Las etiquetas que se añaden a volúmenes en clústeres de ONTAP locales se pueden utilizar con el servicio de etiquetado
 
 Las etiquetas que agregue a un volumen ahora están asociadas con la función de etiquetado del servicio Plantillas de aplicación, que puede ayudarle a organizar y simplificar la administración de sus recursos.
-
-
-
-== 28 de noviembre de 2021
-
-
-
-=== Se ha simplificado el asistente para crear volúmenes para clústeres de ONTAP en las instalaciones
-
-Hemos rediseñado el asistente de creación de volúmenes para facilitar su uso y ahora puede elegir una política de exportación personalizada.

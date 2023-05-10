@@ -38,4 +38,4 @@ Después de detectar un clúster, este está disponible como entorno de trabajo 
 
 
 .Enlace relacionado
-https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["Obtén más información sobre la gestión de licencias para clústeres de ONTAP on-premises desde la cartera digital de BlueXP"^]
+https://["Obtén más información sobre la gestión de licencias para clústeres de ONTAP on-premises desde la cartera digital de BlueXP"^]
