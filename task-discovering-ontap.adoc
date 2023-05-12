@@ -59,7 +59,7 @@ Antes de descubrir el clúster de ONTAP en las instalaciones, asegúrese de habe
 
 * Debería haber comenzado con BlueXP, que incluye el inicio de sesión y la configuración de una cuenta.
 +
-https://["Aprenda a comenzar con BlueXP"^]
+69c4d579a506c05e94d3e4986ec536a3
 
 * Necesita la dirección IP de administración del clúster y la contraseña de la cuenta de usuario administrador.
 * BlueXP detecta los clústeres de ONTAP mediante HTTPS. Si utiliza políticas de firewall personalizadas, el clúster de ONTAP debe permitir el acceso HTTPS de entrada a través del puerto 443.
@@ -78,9 +78,9 @@ La política de firewall "mgmt" predeterminada permite el acceso HTTPS entrante 
 Si desea organizar en niveles datos inactivos en el cloud, debe revisar los requisitos del conector en función de dónde tenga pensado organizar los datos inactivos.
 
 +
-** https://["Más información sobre conectores"^]
-** https://["Cambio entre conectores"^]
-** https://["Más información sobre la organización en niveles de BlueXP"^]
+** da1264a616f156bd6836a85f7dfdea5a
+** 74d39f4b6fe0e32c5cfa2ed86891bf44
+** ab39f7f9b8000627309eae76de10963b
 
 
 * El host del conector debe permitir el acceso HTTPS de salida a través del puerto 443.
