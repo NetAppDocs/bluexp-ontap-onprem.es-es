@@ -45,7 +45,7 @@ NOTE: Si tienes un conector, no puedes realizar actualizaciones desde tu equipo 
 
 Cuando descubre un clúster ONTAP en las instalaciones desde la consola BlueXP, ahora verá una sola opción:
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-discover-on-prem-ontap.png["Una captura de pantalla que muestra la opción detectar ONTAP en las instalaciones disponible a la hora de crear un entorno de trabajo"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-ontap-onprem/main/media/screenshot-discover-on-prem-ontap.png["Una captura de pantalla que muestra la opción detectar ONTAP en las instalaciones disponible a la hora de crear un entorno de trabajo"]
 
 Anteriormente, había flujos separados para el descubrimiento directo y para el descubrimiento con un conector. Estas dos opciones siguen estando disponibles, pero se fusionan en un único flujo.
 
@@ -89,7 +89,7 @@ https://["Obtenga más información sobre esta opción de detección y gestión"
 
 Para clústeres de ONTAP en las instalaciones que se detectan a través de un conector, la vista estándar de BlueXP ahora muestra los volúmenes FlexGroup que se crearon a través de System Manager o la CLI de ONTAP. También puede gestionar estos volúmenes clonándolos, editando su configuración, eliminarlos y mucho más.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-flexgroup-volumes.png["Captura de pantalla que muestra un volumen FlexGroup en la página Volumes de un clúster ONTAP en las instalaciones."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-ontap-onprem/main/media/screenshot-flexgroup-volumes.png["Captura de pantalla que muestra un volumen FlexGroup en la página Volumes de un clúster ONTAP en las instalaciones."]
 
 BlueXP no admite la creación de volúmenes de FlexGroup. Tendrá que seguir usando System Manager o la interfaz de línea de comandos para crear volúmenes de FlexGroup.
 
@@ -107,7 +107,7 @@ Hemos introducido una nueva página general para proporcionar detalles clave sob
 
 También puede ver detalles sobre la integración con otros servicios de BlueXP que habilitan la organización en niveles de datos, la replicación de datos y los backups.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png["Captura de pantalla que muestra la página Descripción general de un clúster ONTAP en las instalaciones."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-ontap-onprem/main/media/screenshot-overview.png["Captura de pantalla que muestra la página Descripción general de un clúster ONTAP en las instalaciones."]
 
 
 
@@ -115,7 +115,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 Hemos rediseñado la página Volumes para proporcionar un resumen de los volúmenes en un clúster. El resumen muestra el número total de volúmenes, la cantidad de capacidad aprovisionada, la capacidad utilizada y la capacidad reservada, y la cantidad de datos organizados en niveles.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png["Captura de pantalla que muestra la página Volumes de un clúster de ONTAP en las instalaciones."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-ontap-onprem/main/media/screenshot-volumes.png["Captura de pantalla que muestra la página Volumes de un clúster de ONTAP en las instalaciones."]
 
 
 
