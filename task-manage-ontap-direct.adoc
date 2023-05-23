@@ -41,12 +41,12 @@ image:screenshot-credentials.png["Captura de pantalla que muestra la solicitud d
 
 . Utilice System Manager para gestionar ONTAP.
 +
-Si necesita ayuda para el uso de System Manager con ONTAP, puede consultar https://["Documentación de ONTAP"^] para obtener instrucciones paso a paso. A continuación encontrará algunos enlaces que pueden ayudarle:
+Si necesita ayuda para el uso de System Manager con ONTAP, puede consultar https://docs.netapp.com/us-en/ontap/index.html["Documentación de ONTAP"^] para obtener instrucciones paso a paso. A continuación encontrará algunos enlaces que pueden ayudarle:
 
 +
-** https://["Gestión de volúmenes y LUN"^]
-** https://["Gestión de redes"^]
-** https://["Protección de datos"^]
+** https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Gestión de volúmenes y LUN"^]
+** https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Gestión de redes"^]
+** https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["Protección de datos"^]
 
 
 

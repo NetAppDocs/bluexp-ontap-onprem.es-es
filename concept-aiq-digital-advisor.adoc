@@ -40,4 +40,4 @@ El asesor digital ofrece información para todos los sistemas de ONTAP en las in
 
 == Más información
 
-https://["Documentación del asesor digital"^]
+https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-bluexp.html["Documentación del asesor digital"^]
