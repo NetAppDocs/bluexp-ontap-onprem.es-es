@@ -44,7 +44,7 @@ Con la opción de detección directa, se le pedirá que inicie sesión con sus c
 La versión del clúster debe ser 9.13.1 para habilitar el backup y la recuperación de datos de BlueXP desde System Manager.
 
 +
-Si _not_ detectó un clúster mediante un Connector, no podrá usar System Manager (vista avanzada) para habilitar el backup y la recuperación. Sin embargo, puedes habilitar el backup y la recuperación en un clúster on-premises directamente desde BlueXP. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Aprenda cómo empezar"^]
+Si _not_ detectó un clúster mediante un Connector, no podrá usar System Manager (vista avanzada) para habilitar el backup y la recuperación. Sin embargo, puedes habilitar el backup y la recuperación en un clúster on-premises directamente desde BlueXP. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Aprenda cómo empezar"^]
 
 * Actualizaciones bajo demanda
 +
