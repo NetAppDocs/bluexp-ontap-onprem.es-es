@@ -121,6 +121,9 @@ Descubre tus clusters de ONTAP en las instalaciones desde el lienzo en BlueXP. A
 Si selecciona esta opción, no tendrá que volver a introducir las credenciales cada vez que abra el entorno de trabajo. Estas credenciales sólo están asociadas a su usuario de BlueXP. No se guardan para su uso por parte de nadie más de su cuenta.
 
 . Seleccione *Discover*.
++
+Si no tienes un conector y no se puede acceder a la dirección IP desde BlueXP, se te pedirá que crees un conector.
+
 
 
 .Resultado
