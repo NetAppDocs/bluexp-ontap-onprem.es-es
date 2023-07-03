@@ -18,6 +18,18 @@ Descubre las novedades de la gestión de clústeres de ONTAP en las instalacione
 
 
 
+== 2 de julio de 2023
+
+
+
+=== Detección de clúster desde Mi estado
+
+Ahora puedes detectar los clústeres de ONTAP on-premises desde *Canvas > Mi estado* mediante la selección de un clúster que BlueXP detectó previamente a partir de los clústeres de ONTAP asociados con la dirección de correo electrónico para tu inicio de sesión de BlueXP.
+
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["Aprenda a descubrir clústeres en la página Mi estado"].
+
+
+
 == 4 de mayo de 2023
 
 
