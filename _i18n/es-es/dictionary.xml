@@ -189,7 +189,6 @@
   <block id="4021c0d07bda2ea80ded248828507d76" category="paragraph">Un coste puede estar asociado, pero depende de lo siguiente:</block>
   <block id="f0ec06c8888b911820be6e1fcc689c0b" category="list-text">Si implementa un conector para detectar y gestionar los clústeres.</block>
   <block id="0d29d27599c2af161506dbd9dbafba3f" category="paragraph">Puede instalar el conector en la nube o en sus instalaciones.</block>
-  <block id="9ac91148b1f0257152bc376ab38bf436" category="doc">Documentación de clústeres de ONTAP en las instalaciones</block>
   <block id="1f7138998459804601fc351f8d442e29" category="section-title">1 de enero de 2023</block>
   <block id="f2e4e4f7b0b864863bfac74f4383a826" category="section-title">Guarde las credenciales de ONTAP</block>
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">Obtenga más información sobre esta opción.</block>
@@ -548,4 +547,5 @@
   <block id="7689e37bac08b82f66558bf21e5ea57d" category="list-text">Seleccione un clúster y luego seleccione *Discover*.</block>
   <block id="f44b1e23b4e1566aa16d4b2b0be52eb8" category="paragraph"><block ref="f44b1e23b4e1566aa16d4b2b0be52eb8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eecdf85dabb12fb229d35075dd322550" category="list-text">Introduzca la contraseña de la cuenta de usuario de administrador.</block>
+  <block id="3f155fde095b56c33aa16ebcf24a5d94" category="doc">Gestión de clústeres de ONTAP en las instalaciones mediante BlueXP</block>
 </blocks>
