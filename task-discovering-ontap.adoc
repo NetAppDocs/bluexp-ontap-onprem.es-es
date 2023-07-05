@@ -162,7 +162,7 @@ Tenga en cuenta lo siguiente acerca de los clústeres de ONTAP locales que apare
 * La dirección de correo electrónico que usas para iniciar sesión en BlueXP debe estar asociada con una cuenta del sitio de soporte de NetApp (NSS) de nivel completo registrada.
 +
 ** Si inicias sesión en BlueXP con tu cuenta de NSS y llegas a la página My estate, BlueXP utiliza dicha cuenta de NSS para encontrar los clústeres asociados con la cuenta.
-** Si inicias sesión en BlueXP con una cuenta de nube y llegas a la página Mi estado, BlueXP te pedirá que verifiques tu correo electrónico. Si esa dirección de correo electrónico está asociada con una cuenta de NSS, BlueXP utiliza esa información para buscar los clústeres asociados a la cuenta.
+** Si inicias sesión en BlueXP con una cuenta de nube o una conexión federada y accedes a la página My estate, BlueXP te pedirá que verifiques tu correo electrónico. Si esa dirección de correo electrónico está asociada con una cuenta de NSS, BlueXP utiliza esa información para buscar los clústeres asociados a la cuenta.
 
 
 * BlueXP solo muestra los clústeres de ONTAP que han enviado mensajes de AutoSupport correctamente a NetApp.

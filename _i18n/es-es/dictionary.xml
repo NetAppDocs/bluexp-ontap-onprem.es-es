@@ -537,7 +537,6 @@
   <block id="8b88ed64b6b30080910756ab3a0ea719" category="paragraph">Tenga en cuenta lo siguiente acerca de los clústeres de ONTAP locales que aparecen en la página My estate:</block>
   <block id="06730fe7ddb260af67563763fb1cff3f" category="list-text">La dirección de correo electrónico que usas para iniciar sesión en BlueXP debe estar asociada con una cuenta del sitio de soporte de NetApp (NSS) de nivel completo registrada.</block>
   <block id="05df8b76be995f5a9cfa0f9805c5c671" category="list-text">Si inicias sesión en BlueXP con tu cuenta de NSS y llegas a la página My estate, BlueXP utiliza dicha cuenta de NSS para encontrar los clústeres asociados con la cuenta.</block>
-  <block id="17579109afe537b92b0d58dc1b3a2261" category="list-text">Si inicias sesión en BlueXP con una cuenta de nube y llegas a la página Mi estado, BlueXP te pedirá que verifiques tu correo electrónico. Si esa dirección de correo electrónico está asociada con una cuenta de NSS, BlueXP utiliza esa información para buscar los clústeres asociados a la cuenta.</block>
   <block id="cf28359d03fa5d995d85df0a5ebb62c8" category="list-text">BlueXP solo muestra los clústeres de ONTAP que han enviado mensajes de AutoSupport correctamente a NetApp.</block>
   <block id="9e5b23122dc2a6feb6587ea531e0634e" category="list-text">Para actualizar la lista de inventario, salga de la página Mi estado, espere 5 minutos y vuelva a ella.</block>
   <block id="0c136b2a4c8e3fbb938288c9e135d82b" category="list-text">Selecciona *Mi estado*.</block>
@@ -548,4 +547,5 @@
   <block id="f44b1e23b4e1566aa16d4b2b0be52eb8" category="paragraph"><block ref="f44b1e23b4e1566aa16d4b2b0be52eb8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eecdf85dabb12fb229d35075dd322550" category="list-text">Introduzca la contraseña de la cuenta de usuario de administrador.</block>
   <block id="3f155fde095b56c33aa16ebcf24a5d94" category="doc">Gestión de clústeres de ONTAP en las instalaciones mediante BlueXP</block>
+  <block id="9db4c476e2e5483cdbf8e71023278b72" category="list-text">Si inicias sesión en BlueXP con una cuenta de nube o una conexión federada y accedes a la página My estate, BlueXP te pedirá que verifiques tu correo electrónico. Si esa dirección de correo electrónico está asociada con una cuenta de NSS, BlueXP utiliza esa información para buscar los clústeres asociados a la cuenta.</block>
 </blocks>
