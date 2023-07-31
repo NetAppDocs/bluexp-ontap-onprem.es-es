@@ -19,10 +19,10 @@ Elimine un entorno de trabajo ONTAP en las instalaciones si ya no quiere gestion
 La eliminación del entorno de trabajo no afecta al clúster de ONTAP. Usted puede redescubrir de BlueXP en cualquier momento.
 
 .Pasos
-. En la página lienzo, haga doble clic en el nombre del entorno de trabajo ONTAP en las instalaciones.
-. Haga clic en el icono de menú y seleccione *Quitar del área de trabajo*.
+. En la página Lienzo, seleccione el entorno de trabajo local de ONTAP.
+. Seleccione el icono del menú y seleccione *Eliminar del espacio de trabajo*.
 +
 image:screenshot_remove_onprem.png["Captura de pantalla que muestra el menú de la parte superior derecha de la página y la opción Quitar."]
 
-. Haga clic en *Eliminar* para confirmar.
+. Selecciona *Eliminar* para confirmar.
 

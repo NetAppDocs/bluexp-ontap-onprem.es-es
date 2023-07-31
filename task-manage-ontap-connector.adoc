@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-manage-ontap-connector.html 
-keywords: system manager, advanced view, access system manager, load system manager, use system manager 
+keywords: system manager, advanced view, access system manager, load system manager, use system manager, flexgroup, flexgroup volumes, create flexgroup volume 
 summary: Si necesita realizar una gestión avanzada de un clúster local de ONTAP, puede hacerlo mediante System Manager de ONTAP, que es una interfaz de gestión proporcionada con un sistema ONTAP. Hemos incluido la interfaz de System Manager directamente dentro de BlueXP para que no tenga que salir de BlueXP para una administración avanzada. 
 ---
 = Gestione clústeres de ONTAP en las instalaciones que se detectaron con un conector
@@ -24,9 +24,9 @@ Si se descubrió un entorno de trabajo directamente, el icono de entorno de trab
 
 
 
-== Cree volúmenes desde la vista estándar
+== Cree volúmenes de FlexVol desde la vista estándar
 
-Después de descubrir su clúster de ONTAP en las instalaciones desde BlueXP mediante un conector, puede abrir el entorno de trabajo para aprovisionar y gestionar el almacenamiento.
+Después de detectar un clúster ONTAP en las instalaciones de BlueXP mediante un conector, puedes abrir el entorno de trabajo para aprovisionar y gestionar volúmenes de FlexVol.
 
 
 
@@ -38,8 +38,8 @@ Una función de BlueXP denominada "plantillas" permite crear volúmenes optimiza
 
 .Pasos
 . En el menú de navegación, selecciona *almacenamiento > Canvas*.
-. En la página lienzo, haga doble clic en el nombre del clúster ONTAP en las instalaciones en el que desea aprovisionar volúmenes.
-. Haga clic en *volúmenes > Añadir volumen*.
+. En la página Canvas, seleccione el clúster de ONTAP en las instalaciones en el que desea aprovisionar volúmenes.
+. Selecciona *Volúmenes > Añadir volumen*.
 . Siga los pasos del asistente para crear el volumen.
 +
 .. *Detalles, Protección y Etiquetas*: Introduzca detalles sobre el volumen como su nombre y tamaño, elija una política de instantánea y especifique etiquetas de volumen, si lo desea.
@@ -76,7 +76,7 @@ En la siguiente lista, se describen los campos que podrían presentar dificultad
 | Permisos y usuarios/grupos | Estos campos permiten controlar el nivel de acceso a un recurso compartido de SMB para usuarios y grupos (también llamados listas de control de acceso o ACL). Es posible especificar usuarios o grupos de Windows locales o de dominio, o usuarios o grupos de UNIX. Si especifica un nombre de usuario de Windows de dominio, debe incluir el dominio del usuario con el formato domain\username. 
 |===
 .. *Perfil de uso*: Elija si desea activar o desactivar las funciones de eficiencia del almacenamiento en el volumen para reducir la cantidad total de almacenamiento que necesita.
-.. *Revisión*: Revise los detalles sobre el volumen y luego haga clic en *Agregar*.
+.. *Revisión*: Revisa los detalles sobre el volumen y luego selecciona *Añadir*.
 
 
 
@@ -93,12 +93,12 @@ La plantilla debería facilitar el trabajo porque ciertos parámetros de volumen
 NOTE: Solo es posible crear volúmenes NFS o CIFS cuando se utilizan plantillas.
 
 .Pasos
-. En la página lienzo, haga clic en el nombre del sistema ONTAP en las instalaciones en el que desea aprovisionar un volumen.
-. Haga clic en image:screenshot_gallery_options.gif["Un icono con tres puntos."] > *Añadir volumen de plantilla*.
+. En la página Canvas, seleccione el clúster de ONTAP en las instalaciones en el que desea aprovisionar volúmenes.
+. Seleccione image:screenshot_gallery_options.gif["Un icono con tres puntos."] > *Añadir volumen de plantilla*.
 +
 image:screenshot_template_add_vol_ontap.png["Captura de pantalla que muestra cómo añadir un volumen nuevo de una plantilla."]
 
-. En la página _Select Template_, seleccione la plantilla que desea utilizar para crear el volumen y haga clic en *Siguiente*.
+. En la página _Seleccionar plantilla_, seleccione la plantilla que desea utilizar para crear el volumen y seleccione *Siguiente*.
 +
 image:screenshot_select_template_ontap.png["Captura de pantalla de las plantillas de aplicación disponibles."]
 
@@ -109,14 +109,14 @@ Aparece la página _define Parameters_.
 image:screenshot_define_ontap_vol_from_template.png["Captura de pantalla que muestra una plantilla en blanco que debe rellenar para crear un volumen."]
 
 +
-*Nota:* puede hacer clic en la casilla de verificación *Mostrar parámetros de sólo lectura* para mostrar todos los campos bloqueados por la plantilla si desea ver los valores de esos parámetros. De forma predeterminada, estos campos predefinidos están ocultos y sólo se muestran los campos que debe completar.
+*Nota:* Puede seleccionar la casilla de verificación *Mostrar parámetros de solo lectura* para mostrar todos los campos que han sido bloqueados por la plantilla si desea ver los valores de esos parámetros. De forma predeterminada, estos campos predefinidos están ocultos y sólo se muestran los campos que debe completar.
 
 . En el área _context_, el entorno de trabajo se rellena con el nombre del entorno de trabajo con el que empezó. Debe seleccionar *Storage VM* y *aggregate* donde se creará el volumen.
 . Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla.
 +
 <<Cree volúmenes,Obtenga más información acerca de los parámetros que necesita para crear el volumen>>.
 
-. Haga clic en *Ejecutar plantilla* después de definir todos los parámetros necesarios para este volumen.
+. Seleccione *Run Template* después de haber definido todos los parámetros necesarios para este volumen.
 
 
 .Resultado
@@ -130,6 +130,16 @@ Además, si se implementa alguna acción secundaria en la plantilla (por ejemplo
 
 .Después de terminar
 Si ha aprovisionado un recurso compartido CIFS, proporcione permisos a usuarios o grupos a los archivos y carpetas y compruebe que esos usuarios pueden acceder al recurso compartido y crear un archivo.
+
+
+
+== Cree volúmenes de FlexGroup
+
+Puede usar la API de BlueXP para crear volúmenes de FlexGroup. Un volumen FlexGroup es un volumen de escalado horizontal que ofrece alto rendimiento junto con la distribución automática de la carga.
+
+* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_flexgroup_ontap_create_vol.html["Conozca cómo crear un volumen de FlexGroup con la API"^]
+* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html["Vea qué es un volumen de FlexGroup"^]
+
 
 
 
@@ -187,17 +197,17 @@ link:reference-limitations.html["Revise la lista de limitaciones"].
 
 === Usar la vista avanzada (System Manager)
 
-Abra un entorno de trabajo local de ONTAP y haga clic en la opción Vista avanzada.
+Abra un entorno de trabajo ONTAP local y seleccione la opción Vista avanzada.
 
 .Pasos
-. En la página lienzo, haga doble clic en el nombre de un entorno de trabajo ONTAP en las instalaciones.
-. En la parte superior derecha, haga clic en *Cambiar a vista avanzada*.
+. En la página Canvas, seleccione el clúster de ONTAP en las instalaciones en el que desea aprovisionar volúmenes.
+. En la parte superior derecha, selecciona *Cambiar a vista avanzada*.
 +
 image:screenshot-advanced-view.png["Captura de pantalla de un entorno de trabajo de ONTAP en las instalaciones que muestra la opción Cambiar a vista avanzada."]
 
-. Si aparece el mensaje de confirmación, léalo y haga clic en *Cerrar*.
+. Si aparece el mensaje de confirmación, léalo y selecciona *Cerrar*.
 . Utilice System Manager para gestionar ONTAP.
-. Si es necesario, haga clic en *Cambiar a vista estándar* para volver a la administración estándar a través de BlueXP.
+. Si es necesario, selecciona *Cambiar a vista estándar* para volver a la gestión estándar a través de BlueXP.
 +
 image:screenshot-standard-view.png["Captura de pantalla de un entorno de trabajo ONTAP en las instalaciones que muestra la opción Cambiar a vista estándar."]
 

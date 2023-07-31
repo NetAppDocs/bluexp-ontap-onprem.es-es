@@ -25,7 +25,7 @@ BlueXP no admite algunas funciones de System Manager.
 link:reference-limitations.html["Revise la lista de limitaciones"].
 
 .Pasos
-. En la página lienzo, haga doble clic en el nombre de un entorno de trabajo ONTAP en las instalaciones.
+. En la página Lienzo, seleccione el entorno de trabajo local de ONTAP.
 +
 El icono de entorno de trabajo identifica los clústeres que se detectaron directamente:
 
