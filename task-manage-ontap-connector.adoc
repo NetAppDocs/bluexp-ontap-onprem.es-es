@@ -137,7 +137,7 @@ Si ha aprovisionado un recurso compartido CIFS, proporcione permisos a usuarios 
 
 Puede usar la API de BlueXP para crear volúmenes de FlexGroup. Un volumen FlexGroup es un volumen de escalado horizontal que ofrece alto rendimiento junto con la distribución automática de la carga.
 
-* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_flexgroup_ontap_create_vol.html["Conozca cómo crear un volumen de FlexGroup con la API"^]
+* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html["Conozca cómo crear un volumen de FlexGroup con la API"^]
 * https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html["Vea qué es un volumen de FlexGroup"^]
 
 
