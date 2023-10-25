@@ -18,7 +18,7 @@ Descubre los clústeres de ONTAP on-premises de BlueXP para empezar a gestionar 
 
 
 
-== Opciones de detección y administración
+== Paso 1: Revise las opciones de detección y administración
 
 BlueXP proporciona dos opciones de detección y gestión para los clústeres de ONTAP on-premises:
 
@@ -49,18 +49,15 @@ Si decide utilizar la otra opción de detección más adelante, deberá descubri
 
 
 
-== Requisitos
+== Paso 2: Configure su entorno
 
 Antes de detectar los clústeres de ONTAP en las instalaciones, asegúrese de que cumple los siguientes requisitos.
 
-
-
-=== Requisitos generales
-
-* Debería haber comenzado con BlueXP, que incluye el inicio de sesión y la configuración de una cuenta.
+Requisitos generales::
 +
+--
+* Debería haber comenzado con BlueXP, que incluye el inicio de sesión y la configuración de una cuenta.
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["Aprenda a comenzar con BlueXP"^]
-
 * Necesita la dirección IP de administración del clúster y la contraseña de la cuenta de usuario administrador.
 * BlueXP detecta los clústeres de ONTAP mediante HTTPS. Si utiliza políticas de firewall personalizadas, el clúster de ONTAP debe permitir el acceso HTTPS de entrada a través del puerto 443.
 +
@@ -68,10 +65,10 @@ La política de firewall "mgmt" predeterminada permite el acceso HTTPS entrante 
 
 
 
-
-
-=== Requisitos para la detección del conector
-
+--
+Requisitos para la detección del conector::
++
+--
 * El clúster en las instalaciones debe ejecutar ONTAP 8.3 o una versión posterior.
 * Un conector debe estar instalado en un proveedor de cloud o en sus instalaciones.
 +
@@ -83,16 +80,16 @@ Si desea organizar en niveles datos inactivos en el cloud, debe revisar los requ
 ** https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["Más información sobre la organización en niveles de BlueXP"^]
 
 
-* El host del conector debe permitir el acceso HTTPS de salida a través del puerto 443.
+* El host del conector debe permitir las conexiones salientes a través del puerto 443 (HTTPS) y el clúster de ONTAP debe permitir el acceso HTTP entrante a través del puerto 443.
 +
 Si el conector está en la nube, el grupo de seguridad predefinido permite todas las comunicaciones salientes.
 
 
 
-
-
-=== Requisitos para detección directa
-
+--
+Requisitos para detección directa::
++
+--
 * El clúster en las instalaciones debe ejecutar ONTAP 9.12.1 o una versión posterior.
 * El clúster debe tener conectividad de entrada y salida al servicio BlueXP:
 +
@@ -101,31 +98,29 @@ Si el conector está en la nube, el grupo de seguridad predefinido permite todas
 * El equipo que está utilizando para acceder a la consola BlueXP debe tener una conexión de red al clúster ONTAP en las instalaciones, de forma similar a cómo proporcionaría conexiones a otros recursos de su red privada.
 
 
-
-
-== Detectar un clúster
-
-Para descubrir sus clústeres de ONTAP en las instalaciones desde el lienzo, proporcione detalles manualmente sobre el clúster o seleccione un clúster detectado previamente en la página Mi estado.
-
-.Acerca de esta tarea
-* Puede iniciar el proceso de detección de dos maneras:
-+
-** En *Lienzo > Mis entornos de trabajo* añadiendo manualmente detalles sobre el clúster de ONTAP local.
-** En *Canvas > Mi estado*, seleccionando un clúster que BlueXP detectó previamente en función de los clústeres de ONTAP asociados con la dirección de correo electrónico para su inicio de sesión de BlueXP.
-
-
-* Cuando inicia el proceso de detección, BlueXP detecta un clúster de la siguiente manera:
-+
-** Si tienes un conector activo que tiene una conexión con un clúster de ONTAP, BlueXP utilizará dicho conector para detectar y gestionar el clúster.
-** Si no tiene un conector o si su conector no tiene una conexión con el clúster ONTAP, BlueXP utilizará automáticamente la opción de detección y administración directa.
+--
 
 
 
 
+== Paso 3: Detecte un clúster
+
+Descubre tus clústeres de ONTAP on-premises desde el Canvas de una de estas dos formas:
+
+* En *Lienzo > Mis entornos de trabajo* añadiendo manualmente detalles sobre el clúster de ONTAP local.
+* En *Canvas > Mi estado*, seleccionando un clúster que BlueXP detectó previamente en función de los clústeres de ONTAP asociados con la dirección de correo electrónico para su inicio de sesión de BlueXP.
 
 
-=== Detectar un clúster de forma manual
+Cuando inicia el proceso de detección, BlueXP detecta un clúster de la siguiente manera:
 
+* Si tienes un conector activo que tiene una conexión con un clúster de ONTAP, BlueXP utilizará dicho conector para detectar y gestionar el clúster.
+* Si no tiene un conector o si su conector no tiene una conexión con el clúster ONTAP, BlueXP utilizará automáticamente la opción de detección y administración directa.
+
+
+[role="tabbed-block"]
+====
+.Detectar un clúster de forma manual
+--
 Para detectar un clúster de ONTAP on-premises en BlueXP, introduzca la dirección IP de administración del clúster y la contraseña de la cuenta de usuario administrador.
 
 .Pasos
@@ -150,10 +145,9 @@ BlueXP detecta el clúster y lo agrega como un entorno de trabajo en el lienzo. 
 * link:task-manage-ontap-connector.html["Aprenda a gestionar clústeres detectados con un conector"]
 
 
-
-
-=== Añada un clúster detectado previamente
-
+--
+.Añada un clúster detectado previamente
+--
 BlueXP detecta automáticamente información sobre los clústeres de ONTAP asociados con la dirección de correo electrónico para el inicio de sesión de BlueXP y los muestra en la página *Mi estado* como clústeres no detectados. Puede ver la lista de clústeres no detectados y añadirlos de uno en uno.
 
 .Acerca de esta tarea
@@ -193,3 +187,6 @@ BlueXP detecta el clúster y lo agrega como un entorno de trabajo en el lienzo. 
 * link:task-manage-ontap-direct.html["Conozca cómo se detectan directamente los clústeres"]
 * link:task-manage-ontap-connector.html["Aprenda a gestionar clústeres detectados con un conector"]
 
+
+--
+====

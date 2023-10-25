@@ -23,7 +23,7 @@ sidebar:
     entries:
     - title: Obtenga información sobre la gestión de clústeres de ONTAP en las instalaciones
       url: "/concept-onprem-ontap.html"
-    - title: Detectar clústeres de ONTAP
+    - title: Detectar clústeres de ONTAP en las instalaciones
       url: "/task-discovering-ontap.html"
   - title: Gestione clústeres de ONTAP en las instalaciones
     entries:
@@ -33,7 +33,7 @@ sidebar:
       url: "/task-manage-ontap-connector.html"
     - title: Ver información del clúster y detalles del contrato
       url: "/task-view-cluster-info.html"
-    - title: Optimice los clústeres mediante Digital Advisor
+    - title: Optimiza los clústeres mediante el asesor digital de BlueXP
       url: "/concept-aiq-digital-advisor.html"
     - title: Quitar un entorno de trabajo de ONTAP en las instalaciones
       url: "/task-remove-on-prem.html"

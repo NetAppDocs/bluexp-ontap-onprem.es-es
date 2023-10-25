@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-manage-ontap-connector.html 
 keywords: system manager, advanced view, access system manager, load system manager, use system manager, flexgroup, flexgroup volumes, create flexgroup volume 
-summary: Si necesita realizar una gestión avanzada de un clúster local de ONTAP, puede hacerlo mediante System Manager de ONTAP, que es una interfaz de gestión proporcionada con un sistema ONTAP. Hemos incluido la interfaz de System Manager directamente dentro de BlueXP para que no tenga que salir de BlueXP para una administración avanzada. 
+summary: Si detectó un clúster de ONTAP en las instalaciones mediante un Connector, podrá crear volúmenes en la vista estándar, usar System Manager en la vista Avanzada y habilitar los servicios de datos de BlueXP. 
 ---
-= Gestione clústeres de ONTAP en las instalaciones que se detectaron con un conector
+= Gestionar clústeres detectados con un conector
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -128,7 +128,7 @@ A continuación, se añade el nuevo volumen al entorno de trabajo.
 
 Además, si se implementa alguna acción secundaria en la plantilla (por ejemplo, al habilitar el backup y la recuperación de BlueXP en el volumen), también se lleva a cabo esa acción.
 
-.Después de terminar
+.El futuro
 Si ha aprovisionado un recurso compartido CIFS, proporcione permisos a usuarios o grupos a los archivos y carpetas y compruebe que esos usuarios pueden acceder al recurso compartido y crear un archivo.
 
 
@@ -143,7 +143,7 @@ Puede usar la API de BlueXP para crear volúmenes de FlexGroup. Un volumen FlexG
 
 
 
-== Administrar ONTAP mediante la vista avanzada
+== Administración de ONTAP mediante la vista avanzada (System Manager)
 
 Si necesita realizar una gestión avanzada de un clúster ONTAP en las instalaciones, puede hacerlo mediante System Manager de ONTAP, que es una interfaz de gestión proporcionada con un sistema ONTAP. Hemos incluido la interfaz de System Manager directamente dentro de BlueXP para que no tenga que salir de BlueXP para una administración avanzada.
 
@@ -195,7 +195,7 @@ link:reference-limitations.html["Revise la lista de limitaciones"].
 
 
 
-=== Usar la vista avanzada (System Manager)
+=== Usar la vista avanzada
 
 Abra un entorno de trabajo ONTAP local y seleccione la opción Vista avanzada.
 

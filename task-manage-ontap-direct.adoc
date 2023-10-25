@@ -4,7 +4,7 @@ permalink: task-manage-ontap-direct.html
 keywords: direct discovery, direct, system manager, local, local discovery 
 summary: Si ha detectado el clúster de ONTAP en las instalaciones directamente sin utilizar un conector, puede introducir el entorno de trabajo para gestionar el clúster mediante System Manager. 
 ---
-= Gestione clústeres de ONTAP en las instalaciones que se detectaron directamente
+= Gestione clústeres que se detectaron directamente
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: Si ha detectado el clúster de ONTAP en las instalaciones directamente 
 [role="lead"]
 Si ha detectado el clúster de ONTAP en las instalaciones directamente sin utilizar un conector, puede abrir el entorno de trabajo para administrar el clúster mediante System Manager.
 
-.Requisito
+.Antes de empezar
 El equipo que está utilizando para acceder a la consola BlueXP debe tener una conexión de red al clúster ONTAP en las instalaciones, de forma similar a cómo proporcionaría conexiones a otros recursos de su red privada.
 
 .Limitaciones
