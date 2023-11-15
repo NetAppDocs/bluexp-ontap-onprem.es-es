@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head class="at-element-marker">
+  <title>Gestionar clústeres detectados con un conector | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Gestionar clústeres detectados con un conector | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/es-es/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+	<meta property="og:description" content="Si detectó un clúster de ONTAP en las instalaciones mediante un Connector, podrá crear volúmenes en la vista estándar, usar System Manager en la vista Avanza..." />
+  <meta property="og:image" content="https://docs.netapp.com/es-es/bluexp-ontap-onprem/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Si detectó un clúster de ONTAP en las instalaciones mediante un Connector, podrá crear volúmenes en la vista estándar, usar System Manager en la vista Avanza...">
+  <meta name="keywords" content=" system manager, advanced view, access system manager, load system manager, use system manager, flexgroup, flexgroup volumes, create flexgroup volume"><!-- Icons -->
+  <link rel="icon" href="/es-es/bluexp-ontap-onprem/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/es-es/bluexp-ontap-onprem/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/es-es/bluexp-ontap-onprem/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/es-es/bluexp-ontap-onprem/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/es-es/bluexp-ontap-onprem/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/es-es/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-ontap-onprem/task-manage-ontap-connector.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+        $(".page-nav__link").first().addClass('page-nav__link--active');
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/es-es/bluexp-ontap-onprem/js/na-search.js'></script><script src='/es-es/bluexp-ontap-onprem/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/es-es/bluexp-ontap-onprem/js/custom-dropdown.js'></script>
+  <script src='/es-es/bluexp-ontap-onprem/js/FileSaver.min.js'></script>
+  <script src='/es-es/bluexp-ontap-onprem/js/jszip-utils.min.js'></script>
+  <script src='/es-es/bluexp-ontap-onprem/js/jszip.min.js'></script><script src='/es-es/bluexp-ontap-onprem/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/es-es/bluexp-ontap-onprem/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/es/">
+                <image id="ie-header-logo" src="/es-es/bluexp-ontap-onprem/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/es/support-and-training/documentation/">Documentos</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/es-es/bluexp-ontap-onprem/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">Español</span>
+                    <img src="/es-es/bluexp-ontap-onprem/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/es-es/bluexp-ontap-onprem/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-ontap-onprem/task-manage-ontap-connector.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-connector.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-ontap-onprem/task-manage-ontap-connector.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-ontap-onprem/task-manage-ontap-connector.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-ontap-onprem/task-manage-ontap-connector.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-ontap-onprem/task-manage-ontap-connector.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-ontap-onprem/task-manage-ontap-connector.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-ontap-onprem/task-manage-ontap-connector.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-ontap-onprem/task-manage-ontap-connector.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/es-es/bluexp-ontap-onprem/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">Todo NetApp</span>
+                    <img src="/es-es/bluexp-ontap-onprem/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/es-es/bluexp-ontap-onprem/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/es/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Soporte</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Base de conocimientos</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/es/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Formación</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/es-es/bluexp-ontap-onprem/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/es-es/bluexp-ontap-onprem/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">Todos los documentos</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">Documentos de nube</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/es-es/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/es-es/bluexp-ontap-onprem/">-->
+      On-premises ONTAP clusters
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/es-es/bluexp-ontap-onprem/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/es-es/bluexp-ontap-onprem/search.html" 
+        data-type="widget"
+        data-placeholder="Buscar documentación"
+        data-no-results-found="No se han encontrado resultados para {query}"
+        data-did-you-mean="Busca {suggestion}."
+        data-no-results-found-did-you-mean="No se ha encontrado ningún resultado para {query}. ¿Querías decir {suggestion}?"
+        data-results-found="{hitCount} resultados encontrados"
+        data-error-message="Se ha producido un error. Por favor, inténtalo de nuevo."
+        data-error-reset="Restablecer búsqueda"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Documentos del clúster ONTAP en las instalaciones"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/es-es/bluexp-ontap-onprem/index.html">
+        Documentos del clúster ONTAP en las instalaciones
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Notas de la versión"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-ontap-onprem/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-ontap-onprem/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Notas de la versión</div>-->
+         Notas de la versión
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Novedades"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/whats-new.html">
+        Novedades
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitaciones conocidas"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/reference-limitations.html">
+        Limitaciones conocidas
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manos a la obra"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-ontap-onprem/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-ontap-onprem/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manos a la obra</div>-->
+         Manos a la obra
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Obtenga información sobre la gestión de clústeres de ONTAP en las instalaciones"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/concept-onprem-ontap.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/concept-onprem-ontap.html">
+        Obtenga información sobre la gestión de clústeres de ONTAP en las instalaciones
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Detectar clústeres de ONTAP en las instalaciones"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/task-discovering-ontap.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/task-discovering-ontap.html">
+        Detectar clústeres de ONTAP en las instalaciones
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestione clústeres de ONTAP en las instalaciones"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-ontap-onprem/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-ontap-onprem/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Gestione clústeres de ONTAP en las instalaciones</div>-->
+         Gestione clústeres de ONTAP en las instalaciones
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permite gestionar los clústeres detectados directamente"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/task-manage-ontap-direct.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/task-manage-ontap-direct.html">
+        Permite gestionar los clústeres detectados directamente
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administrar clústeres detectados con un conector"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/task-manage-ontap-connector.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/task-manage-ontap-connector.html">
+        Administrar clústeres detectados con un conector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ver información del clúster y detalles del contrato"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/task-view-cluster-info.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/task-view-cluster-info.html">
+        Ver información del clúster y detalles del contrato
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Optimiza los clústeres mediante el asesor digital de BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/concept-aiq-digital-advisor.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/concept-aiq-digital-advisor.html">
+        Optimiza los clústeres mediante el asesor digital de BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Quitar un entorno de trabajo de ONTAP en las instalaciones"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/task-remove-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/task-remove-on-prem.html">
+        Quitar un entorno de trabajo de ONTAP en las instalaciones
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Conocimiento y apoyo"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-ontap-onprem/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-ontap-onprem/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Conocimiento y apoyo</div>-->
+         Conocimiento y apoyo
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regístrese para recibir soporte"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/task-support-registration.html">
+        Regístrese para recibir soporte
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Obtenga ayuda"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-ontap-onprem/task-get-help.html">
+        Obtenga ayuda
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avisos legales"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-manage-ontap-connector.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/es-es/bluexp-ontap-onprem/legal-notices.html">
+        Avisos legales
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/es-es/bluexp-ontap-onprem"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/es-es/bluexp-ontap-onprem"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/es-es/bluexp-ontap-onprem/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> Se proporciona el idioma español mediante traducción automática para su comodidad. En caso de alguna inconsistencia, el inglés precede al español. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Gestionar clústeres detectados con un conector</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-10-25 15:02:05 +0000">10/25/2023</time>
+        
+    
+    
+        <span>Colaboradores
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/es-es/bluexp-ontap-onprem/images/discuss-sm.svg" alt="" class="github-icon" />Sugerir cambios</span>
+        <img src="/es-es/bluexp-ontap-onprem/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/es-es/bluexp-ontap-onprem/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-ontap-onprem.es-es/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/es-es/bluexp-ontap-onprem/task-manage-ontap-connector.html&page-title=Gestionar clústeres detectados con un conector" class="page-nav-contribute-link" role="button">Solicitar cambios en el documento</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-ontap-onprem/blob/main/task-manage-ontap-connector.adoc" class="page-nav-contribute-link" role="button">Editar esta página</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Descubre cómo colaborar</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/es-es/bluexp-ontap-onprem/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/es-es/bluexp-ontap-onprem/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/es-es/bluexp-ontap-onprem/pdfs/fullsite-sidebar/Gestión_de_clústeres_de_ONTAP_en_las_instalaciones_mediante_BlueXP.pdf" >
+                    <img src="/es-es/bluexp-ontap-onprem/images/pdf-icon.png" alt="" width="16" height="16"/>PDF de este sitio de documentos</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-ontap-onprem/pdfs/sidebar/Notas_de_la_versión.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-ontap-onprem/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Notas de la versión
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-ontap-onprem/pdfs/sidebar/Manos_a_la_obra.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-ontap-onprem/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manos a la obra
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-ontap-onprem/pdfs/sidebar/Gestione_clústeres_de_ONTAP_en_las_instalaciones.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-ontap-onprem/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Gestione clústeres de ONTAP en las instalaciones
+          </a>
+          
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-ontap-onprem/pdfs/sidebar/Conocimiento_y_apoyo.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-ontap-onprem/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Conocimiento y apoyo
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/es-es/bluexp-ontap-onprem/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Recopilación de documentos PDF independientes<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Si detectó un clúster de ONTAP en las instalaciones mediante un Connector, podrá crear volúmenes en la vista estándar, usar System Manager en la vista Avanzada y habilitar los servicios de datos de BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>En el lienzo, el icono de entorno de trabajo para un clúster que ha descubierto con un conector debe tener un aspecto similar al siguiente:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-connector-we.png" alt="Captura de pantalla del icono de entorno de trabajo que aparece en el lienzo"></span></p>
+</div>
+<div class="paragraph">
+<p>Si se descubrió un entorno de trabajo directamente, el icono de entorno de trabajo incluye la palabra "directo".</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cree-volúmenes-de-flexvol-desde-la-vista-estándar">Cree volúmenes de FlexVol desde la vista estándar</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Después de detectar un clúster ONTAP en las instalaciones de BlueXP mediante un conector, puedes abrir el entorno de trabajo para aprovisionar y gestionar volúmenes de FlexVol.</p>
+</div>
+<div class="sect2">
+<h3 id="cree-volúmenes">Cree volúmenes</h3>
+<div class="paragraph">
+<p>BlueXP le permite crear volúmenes NFS o CIFS en agregados existentes. No se pueden crear nuevos agregados en un clúster de ONTAP en las instalaciones desde la vista estándar de BlueXP. Debe usar la vista Advanced para crear agregados.</p>
+</div>
+<div class="paragraph">
+<p>Una función de BlueXP denominada "plantillas" permite crear volúmenes optimizados para los requisitos de carga de trabajo de determinadas aplicaciones, como bases de datos o servicios de streaming. Si su organización ha creado plantillas de volumen que debe utilizar, siga <a href="#crear-volúmenes-a-partir-de-plantillas">estos pasos</a>.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Pasos</div>
+<ol class="arabic">
+<li>
+<p>En el menú de navegación, selecciona <strong>almacenamiento &gt; Canvas</strong>.</p>
+</li>
+<li>
+<p>En la página Canvas, seleccione el clúster de ONTAP en las instalaciones en el que desea aprovisionar volúmenes.</p>
+</li>
+<li>
+<p>Selecciona <strong>Volúmenes &gt; Añadir volumen</strong>.</p>
+</li>
+<li>
+<p>Siga los pasos del asistente para crear el volumen.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>Detalles, Protección y Etiquetas</strong>: Introduzca detalles sobre el volumen como su nombre y tamaño, elija una política de instantánea y especifique etiquetas de volumen, si lo desea.</p>
+<div class="paragraph">
+<p>Algunos de los campos en esta página son claros y explicativos. En la siguiente lista, se describen los campos que podrían presentar dificultades:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Campo</th>
+<th class="tableblock halign-left valign-top">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tamaño</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El tamaño máximo que puede introducir depende en gran medida de si habilita thin provisioning, lo que le permite crear un volumen que sea mayor que el almacenamiento físico que hay disponible actualmente.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Política de Snapshot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Una política de copia de Snapshot especifica la frecuencia y el número de copias de Snapshot de NetApp creadas automáticamente. Una copia snapshot de NetApp es una imagen del sistema de archivos puntual que no afecta al rendimiento y requiere un almacenamiento mínimo. Puede elegir la directiva predeterminada o ninguna. Es posible que no elija ninguno para los datos transitorios: Por ejemplo, tempdb para Microsoft SQL Server.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Protocolo</strong>: Elija el protocolo para el volumen (NFS, CIFS o iSCSI) y, a continuación, establezca el control de acceso o los permisos para el volumen.</p>
+<div class="paragraph">
+<p>Si elige CIFS y aún no hay ningún servidor configurado, BlueXP le solicita que configure un servidor CIFS con Active Directory o un grupo de trabajo.</p>
+</div>
+<div class="paragraph">
+<p>En la siguiente lista, se describen los campos que podrían presentar dificultades:</p>
+</div>
+</li>
+</ol>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Campo</th>
+<th class="tableblock halign-left valign-top">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Control de accesos</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Una política de exportación de NFS define los clientes de la subred que pueden acceder al volumen. De forma predeterminada, BlueXP introduce un valor que proporciona acceso a todas las instancias de la subred.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Permisos y usuarios/grupos</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Estos campos permiten controlar el nivel de acceso a un recurso compartido de SMB para usuarios y grupos (también llamados listas de control de acceso o ACL). Es posible especificar usuarios o grupos de Windows locales o de dominio, o usuarios o grupos de UNIX. Si especifica un nombre de usuario de Windows de dominio, debe incluir el dominio del usuario con el formato domain\username.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>Perfil de uso</strong>: Elija si desea activar o desactivar las funciones de eficiencia del almacenamiento en el volumen para reducir la cantidad total de almacenamiento que necesita.</p>
+</li>
+<li>
+<p><strong>Revisión</strong>: Revisa los detalles sobre el volumen y luego selecciona <strong>Añadir</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="crear-volúmenes-a-partir-de-plantillas">Crear volúmenes a partir de plantillas</h3>
+<div class="paragraph">
+<p>Si su organización ha creado plantillas de volúmenes de ONTAP en las instalaciones para poder implementar volúmenes optimizados para los requisitos de cargas de trabajo de determinadas aplicaciones, siga los pasos de esta sección.</p>
+</div>
+<div class="paragraph">
+<p>La plantilla debería facilitar el trabajo porque ciertos parámetros de volumen ya se definirán en la plantilla, como el tipo de disco, el tamaño, el protocolo, la política de instantáneas, etc. Cuando ya hay un parámetro predefinido, puede saltar al siguiente parámetro de volumen.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-ontap-onprem/images/note.svg" alt="Nota">
+</td>
+<td class="content">
+Solo es posible crear volúmenes NFS o CIFS cuando se utilizan plantillas.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">Pasos</div>
+<ol class="arabic">
+<li>
+<p>En la página Canvas, seleccione el clúster de ONTAP en las instalaciones en el que desea aprovisionar volúmenes.</p>
+</li>
+<li>
+<p>Seleccione <span class="image"><img src="./media/screenshot_gallery_options.gif" alt="Un icono con tres puntos."></span> &gt; <strong>Añadir volumen de plantilla</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_template_add_vol_ontap.png" alt="Captura de pantalla que muestra cómo añadir un volumen nuevo de una plantilla."></span></p>
+</div>
+</li>
+<li>
+<p>En la página <em>Seleccionar plantilla</em>, seleccione la plantilla que desea utilizar para crear el volumen y seleccione <strong>Siguiente</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_select_template_ontap.png" alt="Captura de pantalla de las plantillas de aplicación disponibles."></span></p>
+</div>
+<div class="paragraph">
+<p>Aparece la página <em>define Parameters</em>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_define_ontap_vol_from_template.png" alt="Captura de pantalla que muestra una plantilla en blanco que debe rellenar para crear un volumen."></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Nota:</strong> Puede seleccionar la casilla de verificación <strong>Mostrar parámetros de solo lectura</strong> para mostrar todos los campos que han sido bloqueados por la plantilla si desea ver los valores de esos parámetros. De forma predeterminada, estos campos predefinidos están ocultos y sólo se muestran los campos que debe completar.</p>
+</div>
+</li>
+<li>
+<p>En el área <em>context</em>, el entorno de trabajo se rellena con el nombre del entorno de trabajo con el que empezó. Debe seleccionar <strong>Storage VM</strong> y <strong>aggregate</strong> donde se creará el volumen.</p>
+</li>
+<li>
+<p>Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla.</p>
+<div class="paragraph">
+<p><a href="#cree-volúmenes">Obtenga más información acerca de los parámetros que necesita para crear el volumen</a>.</p>
+</div>
+</li>
+<li>
+<p>Seleccione <strong>Run Template</strong> después de haber definido todos los parámetros necesarios para este volumen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Resultado</div>
+<p>BlueXP aprovisiona el volumen y muestra una página para que pueda ver el progreso.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_template_creating_resource_ontap.png" alt="Captura de pantalla que muestra el progreso de la creación de un nuevo volumen a partir de la plantilla."></span></p>
+</div>
+<div class="paragraph">
+<p>A continuación, se añade el nuevo volumen al entorno de trabajo.</p>
+</div>
+<div class="paragraph">
+<p>Además, si se implementa alguna acción secundaria en la plantilla (por ejemplo, al habilitar el backup y la recuperación de BlueXP en el volumen), también se lleva a cabo esa acción.</p>
+</div>
+<div class="paragraph">
+<div class="title">El futuro</div>
+<p>Si ha aprovisionado un recurso compartido CIFS, proporcione permisos a usuarios o grupos a los archivos y carpetas y compruebe que esos usuarios pueden acceder al recurso compartido y crear un archivo.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cree-volúmenes-de-flexgroup">Cree volúmenes de FlexGroup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Puede usar la API de BlueXP para crear volúmenes de FlexGroup. Un volumen FlexGroup es un volumen de escalado horizontal que ofrece alto rendimiento junto con la distribución automática de la carga.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html" target="_blank" rel="noopener">"Conozca cómo crear un volumen de FlexGroup con la API"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html" target="_blank" rel="noopener">"Vea qué es un volumen de FlexGroup"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="administración-de-ontap-mediante-la-vista-avanzada-system-manager">Administración de ONTAP mediante la vista avanzada (System Manager)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Si necesita realizar una gestión avanzada de un clúster ONTAP en las instalaciones, puede hacerlo mediante System Manager de ONTAP, que es una interfaz de gestión proporcionada con un sistema ONTAP. Hemos incluido la interfaz de System Manager directamente dentro de BlueXP para que no tenga que salir de BlueXP para una administración avanzada.</p>
+</div>
+<div class="paragraph">
+<p>Esta vista avanzada está disponible como vista previa. Tenemos pensado perfeccionar esta experiencia y añadir mejoras en próximos lanzamientos. Envíenos sus comentarios mediante el chat en el producto.</p>
+</div>
+<div class="sect2">
+<h3 id="funciones">Funciones</h3>
+<div class="paragraph">
+<p>La vista avanzada de BlueXP le ofrece acceso a funciones de gestión adicionales:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Gestión del almacenamiento avanzada</p>
+<div class="paragraph">
+<p>Gestionar grupos de consistencia, recursos compartidos, qtrees, cuotas y máquinas virtuales de almacenamiento.</p>
+</div>
+</li>
+<li>
+<p>Gestión de redes</p>
+<div class="paragraph">
+<p>Gestione espacios IP, interfaces de red, conjuntos de puertos y puertos ethernet.</p>
+</div>
+</li>
+<li>
+<p>Eventos y trabajos</p>
+<div class="paragraph">
+<p>Ver registros de eventos, alertas del sistema, trabajos y registros de auditoría</p>
+</div>
+</li>
+<li>
+<p>Protección de datos avanzada</p>
+<div class="paragraph">
+<p>Proteja las máquinas virtuales de almacenamiento, LUN y grupos de consistencia.</p>
+</div>
+</li>
+<li>
+<p>Gestión de hosts</p>
+<div class="paragraph">
+<p>Configure los iGroups SAN y los clientes NFS.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="configuraciones-admitidas">Configuraciones admitidas</h3>
+<div class="paragraph">
+<p>La gestión avanzada mediante System Manager se admite con clústeres ONTAP en las instalaciones que ejecutan 9.10.0 o versiones posteriores.</p>
+</div>
+<div class="paragraph">
+<p>La integración de System Manager no es compatible en regiones GovCloud o regiones que no tienen acceso saliente a Internet.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="limitaciones">Limitaciones</h3>
+<div class="paragraph">
+<p>Algunas funciones de System Manager no son compatibles con clústeres de ONTAP en las instalaciones al usar la vista avanzada en BlueXP.</p>
+</div>
+<div class="paragraph">
+<p><a href="reference-limitations.html">"Revise la lista de limitaciones"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="usar-la-vista-avanzada">Usar la vista avanzada</h3>
+<div class="paragraph">
+<p>Abra un entorno de trabajo ONTAP local y seleccione la opción Vista avanzada.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Pasos</div>
+<ol class="arabic">
+<li>
+<p>En la página Canvas, seleccione el clúster de ONTAP en las instalaciones en el que desea aprovisionar volúmenes.</p>
+</li>
+<li>
+<p>En la parte superior derecha, selecciona <strong>Cambiar a vista avanzada</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-advanced-view.png" alt="Captura de pantalla de un entorno de trabajo de ONTAP en las instalaciones que muestra la opción Cambiar a vista avanzada."></span></p>
+</div>
+</li>
+<li>
+<p>Si aparece el mensaje de confirmación, léalo y selecciona <strong>Cerrar</strong>.</p>
+</li>
+<li>
+<p>Utilice System Manager para gestionar ONTAP.</p>
+</li>
+<li>
+<p>Si es necesario, selecciona <strong>Cambiar a vista estándar</strong> para volver a la gestión estándar a través de BlueXP.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-standard-view.png" alt="Captura de pantalla de un entorno de trabajo ONTAP en las instalaciones que muestra la opción Cambiar a vista estándar."></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="obtenga-ayuda-con-system-manager">Obtenga ayuda con System Manager</h3>
+<div class="paragraph">
+<p>Si necesita ayuda para el uso de System Manager con ONTAP, puede consultar <a href="https://docs.netapp.com/us-en/ontap/index.html" target="_blank" rel="noopener">"Documentación de ONTAP"</a> para obtener instrucciones paso a paso. A continuación encontrará algunos enlaces que pueden ayudarle:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html" target="_blank" rel="noopener">"Gestión de volúmenes y LUN"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html" target="_blank" rel="noopener">"Gestión de redes"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/ontap/concept_dp_overview.html" target="_blank" rel="noopener">"Protección de datos"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="habilite-los-servicios-de-bluexp">Habilite los servicios de BlueXP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Permita que los servicios de datos de BlueXP en sus entornos de trabajo repliquen datos, copia de seguridad de datos, datos de nivel y más.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Replicar datos</dt>
+<dd>
+<p>Replique datos entre sistemas Cloud Volumes ONTAP, Amazon FSX para sistemas de archivos ONTAP y clústeres ONTAP. Elija una replicación de datos puntual, que puede ayudarle a mover datos desde y hacia el cloud, o una programación recurrente, que puede ayudarle con la recuperación ante desastres o la retención de datos a largo plazo.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html" target="_blank" rel="noopener">"Documentación de replicación"</a></p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Realice backups de los datos</dt>
+<dd>
+<p>Realice un backup de los datos desde su sistema ONTAP en las instalaciones en un almacenamiento de objetos de bajo coste en el cloud.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html" target="_blank" rel="noopener">"Documentación de backup y recuperación"</a></p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Analice, asigne y clasifique sus datos</dt>
+<dd>
+<p>Analice sus clústeres corporativos en las instalaciones para asignar y clasificar datos e identificar información privada. Esto puede ayudarle a reducir los riesgos de seguridad y de cumplimiento de normativas, a reducir los costes de almacenamiento y a facilitar los proyectos de migración de datos.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html" target="_blank" rel="noopener">"Documentación de clasificación"</a></p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Organice los datos en niveles en el cloud</dt>
+<dd>
+<p>Amplíe su centro de datos al cloud organizando en niveles los datos inactivos de los clústeres de ONTAP en el almacenamiento de objetos.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html" target="_blank" rel="noopener">"Documentación sobre niveles"</a></p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Mantenga el estado, el tiempo activo y el rendimiento</dt>
+<dd>
+<p>Implemente soluciones sugeridas en los clústeres de ONTAP antes de que se produzca una interrupción o un fallo.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html" target="_blank" rel="noopener">"Documentación de resiliencia operativa"</a></p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Identifique los clusters con baja capacidad</dt>
+<dd>
+<p>Identifique los clústeres que muestran baja capacidad, revise los clústeres de capacidad actual y prevista, entre otros.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html" target="_blank" rel="noopener">"Documentación de eficiencia económica"</a></p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/es-es/bluexp-ontap-onprem/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/es-es/bluexp-ontap-onprem/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">En esta página</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Condiciones de uso</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Política de privacidad</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Política de cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Configuración de cookies</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Enviar comentarios sobre esta página</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/es-es/bluexp-ontap-onprem/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/es-es/bluexp-ontap-onprem/js/prism.js'></script>
+      <script type="text/javascript" src='/es-es/bluexp-ontap-onprem/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/es-es/bluexp-ontap-onprem/js/ie-tabbed-blocks.js'></script>
+    <script src='/es-es/bluexp-ontap-onprem/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
