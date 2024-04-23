@@ -34,15 +34,13 @@ Después de detectar un clúster ONTAP en las instalaciones de BlueXP mediante u
 
 BlueXP le permite crear volúmenes NFS o CIFS en agregados existentes. No se pueden crear nuevos agregados en un clúster de ONTAP en las instalaciones desde la vista estándar de BlueXP. Debe usar la vista Advanced para crear agregados.
 
-Una función de BlueXP denominada "plantillas" permite crear volúmenes optimizados para los requisitos de carga de trabajo de determinadas aplicaciones, como bases de datos o servicios de streaming. Si su organización ha creado plantillas de volumen que debe utilizar, siga <<Crear volúmenes a partir de plantillas,estos pasos>>.
-
 .Pasos
 . En el menú de navegación, selecciona *almacenamiento > Canvas*.
 . En la página Canvas, seleccione el clúster de ONTAP en las instalaciones en el que desea aprovisionar volúmenes.
 . Selecciona *Volúmenes > Añadir volumen*.
 . Siga los pasos del asistente para crear el volumen.
 +
-.. *Detalles, Protección y Etiquetas*: Introduzca detalles sobre el volumen como su nombre y tamaño, elija una política de instantánea y especifique etiquetas de volumen, si lo desea.
+.. *Detalles, protección y etiquetas*: Introduzca los detalles del volumen, como el nombre y el tamaño, y elija una política de Snapshot.
 +
 Algunos de los campos en esta página son claros y explicativos. En la siguiente lista, se describen los campos que podrían presentar dificultades:
 
@@ -80,56 +78,6 @@ En la siguiente lista, se describen los campos que podrían presentar dificultad
 
 
 
-
-
-
-=== Crear volúmenes a partir de plantillas
-
-Si su organización ha creado plantillas de volúmenes de ONTAP en las instalaciones para poder implementar volúmenes optimizados para los requisitos de cargas de trabajo de determinadas aplicaciones, siga los pasos de esta sección.
-
-La plantilla debería facilitar el trabajo porque ciertos parámetros de volumen ya se definirán en la plantilla, como el tipo de disco, el tamaño, el protocolo, la política de instantáneas, etc. Cuando ya hay un parámetro predefinido, puede saltar al siguiente parámetro de volumen.
-
-
-NOTE: Solo es posible crear volúmenes NFS o CIFS cuando se utilizan plantillas.
-
-.Pasos
-. En la página Canvas, seleccione el clúster de ONTAP en las instalaciones en el que desea aprovisionar volúmenes.
-. Seleccione image:screenshot_gallery_options.gif["Un icono con tres puntos."] > *Añadir volumen de plantilla*.
-+
-image:screenshot_template_add_vol_ontap.png["Captura de pantalla que muestra cómo añadir un volumen nuevo de una plantilla."]
-
-. En la página _Seleccionar plantilla_, seleccione la plantilla que desea utilizar para crear el volumen y seleccione *Siguiente*.
-+
-image:screenshot_select_template_ontap.png["Captura de pantalla de las plantillas de aplicación disponibles."]
-
-+
-Aparece la página _define Parameters_.
-
-+
-image:screenshot_define_ontap_vol_from_template.png["Captura de pantalla que muestra una plantilla en blanco que debe rellenar para crear un volumen."]
-
-+
-*Nota:* Puede seleccionar la casilla de verificación *Mostrar parámetros de solo lectura* para mostrar todos los campos que han sido bloqueados por la plantilla si desea ver los valores de esos parámetros. De forma predeterminada, estos campos predefinidos están ocultos y sólo se muestran los campos que debe completar.
-
-. En el área _context_, el entorno de trabajo se rellena con el nombre del entorno de trabajo con el que empezó. Debe seleccionar *Storage VM* y *aggregate* donde se creará el volumen.
-. Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla.
-+
-<<Cree volúmenes,Obtenga más información acerca de los parámetros que necesita para crear el volumen>>.
-
-. Seleccione *Run Template* después de haber definido todos los parámetros necesarios para este volumen.
-
-
-.Resultado
-BlueXP aprovisiona el volumen y muestra una página para que pueda ver el progreso.
-
-image:screenshot_template_creating_resource_ontap.png["Captura de pantalla que muestra el progreso de la creación de un nuevo volumen a partir de la plantilla."]
-
-A continuación, se añade el nuevo volumen al entorno de trabajo.
-
-Además, si se implementa alguna acción secundaria en la plantilla (por ejemplo, al habilitar el backup y la recuperación de BlueXP en el volumen), también se lleva a cabo esa acción.
-
-.El futuro
-Si ha aprovisionado un recurso compartido CIFS, proporcione permisos a usuarios o grupos a los archivos y carpetas y compruebe que esos usuarios pueden acceder al recurso compartido y crear un archivo.
 
 
 

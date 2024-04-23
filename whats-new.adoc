@@ -18,6 +18,16 @@ Descubre las novedades de la gestión de clústeres de ONTAP en las instalacione
 
 
 
+== 22 de abril de 2024
+
+
+
+=== Ya no se admiten plantillas de volumen
+
+Ya no puede crear un volumen a partir de una plantilla. Esta acción se asoció con el servicio de corrección de BlueXP, que ya no está disponible.
+
+
+
 == 30 de julio de 2023
 
 
