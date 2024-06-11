@@ -76,7 +76,7 @@ Si desea organizar en niveles datos inactivos en el cloud, debe revisar los requ
 
 +
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Más información sobre conectores"^]
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Aprenda a cambiar entre varios conectores"^]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html["Aprenda a cambiar entre varios conectores"^]
 ** https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["Más información sobre la organización en niveles de BlueXP"^]
 
 
