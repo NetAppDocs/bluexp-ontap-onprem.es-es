@@ -80,7 +80,7 @@ Si desea organizar en niveles datos inactivos en el cloud, debe revisar los requ
 ** https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["Más información sobre la organización en niveles de BlueXP"^]
 
 
-* El host del conector debe permitir las conexiones salientes a través del puerto 443 (HTTPS) y el clúster de ONTAP debe permitir el acceso HTTP entrante a través del puerto 443.
+* El host de conector debe permitir las conexiones salientes a través del puerto 443 (HTTPS) y el clúster de ONTAP debe permitir el acceso HTTP entrante a través del puerto 443 a la LIF de administración del clúster.
 +
 Si el conector está en la nube, el grupo de seguridad predefinido permite todas las comunicaciones salientes.
 
