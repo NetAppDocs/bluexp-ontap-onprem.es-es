@@ -115,8 +115,6 @@
   <block id="8cc569c03bd345c450afe055c793f724" category="paragraph">La gestión avanzada mediante System Manager se admite con clústeres ONTAP en las instalaciones que ejecutan 9.10.0 o versiones posteriores.</block>
   <block id="0f1ca4e2133610fdc8b23e4db3f7cb0c" category="paragraph">La integración de System Manager no es compatible en regiones GovCloud o regiones que no tienen acceso saliente a Internet.</block>
   <block id="ae5ebdf987b9634f1c41168db5af6124" category="paragraph">Algunas funciones de System Manager no son compatibles con clústeres de ONTAP en las instalaciones al usar la vista avanzada en BlueXP.</block>
-  <block id="0966bd9c118ee81138ac447c7ed4a14f" category="inline-image-macro">Captura de pantalla de un entorno de trabajo de ONTAP en las instalaciones que muestra la opción Cambiar a vista avanzada.</block>
-  <block id="6665a86ade0699adb15fb4e2f3d44fbb" category="paragraph"><block ref="6665a86ade0699adb15fb4e2f3d44fbb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54cf4bb0cf2034f534f1bd85ab4a6bb0" category="inline-image-macro">Captura de pantalla de un entorno de trabajo ONTAP en las instalaciones que muestra la opción Cambiar a vista estándar.</block>
   <block id="922a5d434113f5026172e4d3ab5969a9" category="paragraph"><block ref="922a5d434113f5026172e4d3ab5969a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5d82c1ade2b4a73465d28377bf1ee806" category="section-title">Obtenga ayuda con System Manager</block>
@@ -276,7 +274,6 @@
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service para Google Cloud</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Información general del registro de soporte</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">Existen dos formas de registro para activar el derecho de asistencia:</block>
-  <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">Registro de la suscripción al soporte de ID de cuenta de BlueXP (número de serie de 20 dígitos xxxx960xxxxx que se encuentra en la página Recursos de asistencia técnica de BlueXP).</block>
   <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">Esto sirve como su ID de suscripción de soporte único para cualquier servicio dentro de BlueXP. Debe registrarse cada suscripción de asistencia técnica a nivel de cuenta de BlueXP.</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">Registrar los números de serie de Cloud Volumes ONTAP asociados con una suscripción en el mercado de su proveedor de cloud (estos son números de serie de 20 dígitos 909201xxxxxxxx).</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">Estos números de serie se denominan comúnmente _PAYGO serial Numbers_ y son generados por BlueXP en el momento de la implementación de Cloud Volumes ONTAP.</block>
@@ -311,7 +308,6 @@
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">Se envía inmediatamente un correo electrónico al buzón de correo para finalizar esta transacción segura. Asegúrese de comprobar sus carpetas de spam si el correo electrónico de validación no llega en pocos minutos.</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Confirme la acción desde el correo electrónico.</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">Confirmar envía su solicitud a NetApp y recomienda que cree una cuenta en la página de soporte de NetApp.</block>
-  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">Asegúrese de copiar el número de serie de la cuenta (960xxxx) utilizado anteriormente para el campo de número de serie. Esto agilizará el procesamiento de la cuenta.</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp debería ponerse en contacto con usted durante este proceso. Este es un ejercicio de incorporación puntual para nuevos usuarios.</block>
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp ofrece soporte para BlueXP y sus servicios cloud de diversas maneras. Hay disponibles amplias opciones de auto soporte gratuito las 24 horas del día, los 7 días de la semana, como artículos de la base de conocimiento (KB) y un foro de la comunidad. Su registro de soporte incluye soporte técnico remoto a través de tickets web.</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Utilice opciones de soporte automático</block>
@@ -330,7 +326,6 @@
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">En la página *Recursos*, elija una de las opciones disponibles en Soporte técnico:</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Servicio*: Seleccione el servicio con el que está asociado el problema. Por ejemplo, cuando BlueXP es específico de un problema de soporte técnico con flujos de trabajo o funcionalidades dentro del servicio.</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*Entorno de trabajo*: Si se aplica al almacenamiento, seleccione *Cloud Volumes ONTAP* o *On-Prem* y, a continuación, el entorno de trabajo asociado.</block>
-  <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">La lista de entornos de trabajo se encuentra dentro del ámbito de la cuenta BlueXP, el área de trabajo y el conector que ha seleccionado en el banner superior del servicio.</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*Prioridad de caso*: Elija la prioridad para el caso, que puede ser Baja, Media, Alta o crítica.</block>
   <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">Para obtener más información sobre estas prioridades, pase el ratón sobre el icono de información situado junto al nombre del campo.</block>
   <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*Descripción del problema*: Proporcione una descripción detallada del problema, incluidos los mensajes de error aplicables o los pasos de solución de problemas que haya realizado.</block>
@@ -398,25 +393,18 @@
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">Si abre un caso para un sistema ONTAP que tiene un número de serie, su cuenta de NSS deberá estar asociada con el número de serie de ese sistema.</block>
   <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">Este error podría significar que la cuenta NSS y la compañía de registro con la que está asociada no es la misma compañía de registro para el número de serie de la cuenta de BlueXP (es decir, 960xxxx) o el número de serie del entorno de trabajo. Puede solicitar ayuda utilizando una de las siguientes opciones:</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">El registro de ambos tipos de números de serie permite funcionalidades, como abrir tickets de soporte y la generación automática de casos. Para completar el registro, añade cuentas del sitio de soporte de NetApp (NSS) a BlueXP, como se describe a continuación.</block>
-  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">Registra tu cuenta de BlueXP para recibir soporte de NetApp</block>
-  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">Para registrarte para obtener soporte y activar el soporte, un usuario de tu cuenta de BlueXP debe asociar una cuenta en el sitio de soporte de NetApp a su inicio de sesión en BlueXP. La forma de registrarse para recibir soporte de NetApp depende de si ya tiene una cuenta del sitio de soporte de NetApp (NSS).</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Seleccione *Agregar credenciales NSS* y siga el aviso de autenticación del sitio de soporte de NetApp (NSS).</block>
-  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">La página *Recursos* debe mostrar que su cuenta está registrada para soporte.</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">Una captura de pantalla que muestra un número de serie de cuenta y una casilla de verificación verde y el texto registrado para soporte.</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">Tenga en cuenta que los otros usuarios de BlueXP no verán este mismo estado de registro de soporte si no han asociado una cuenta del sitio de soporte de NetApp con su inicio de sesión de BlueXP. Sin embargo, eso no significa que tu cuenta de BlueXP no esté registrada para el soporte técnico. Siempre y cuando un usuario de la cuenta haya seguido estos pasos, su cuenta se ha registrado.</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">Si eres un cliente existente de NetApp con licencias y números de serie existentes, pero _no_ NSS, deberás crear una cuenta NSS y asociarla al inicio de sesión de BlueXP.</block>
   <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">Asocia tu nueva cuenta de NSS con tu inicio de sesión de BlueXP. Para ello, sigue los pasos que se muestran en <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">Cuando tengas tu cuenta en el sitio de soporte de NetApp, asocia la cuenta con el inicio de sesión de BlueXP siguiendo los pasos que se muestran a continuación <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
   <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Asocie credenciales de NSS para soporte de Cloud Volumes ONTAP</block>
-  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">Es necesario asociar las credenciales del sitio de soporte de NetApp con su cuenta de BlueXP para habilitar los siguientes flujos de trabajo clave para Cloud Volumes ONTAP:</block>
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">Registro de sistemas Cloud Volumes ONTAP de pago por uso para recibir soporte</block>
   <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">Se requiere que proporcione su cuenta de NSS para activar el soporte de su sistema y obtener acceso a los recursos de soporte técnico de NetApp.</block>
   <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">Puesta en marcha de Cloud Volumes ONTAP cuando usted traiga su propia licencia (BYOL)</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">Es necesario proporcionar su cuenta NSS para que BlueXP pueda cargar su clave de licencia y activar la suscripción para el plazo que adquirió. Esto incluye actualizaciones automáticas para renovaciones de términos.</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Actualizar el software Cloud Volumes ONTAP a la versión más reciente</block>
-  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">La asociación de credenciales de NSS con su cuenta de BlueXP es diferente de la cuenta de NSS asociada con un inicio de sesión de usuario de BlueXP.</block>
-  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">Estas credenciales de NSS están asociadas con tu ID de cuenta de BlueXP específico. Los usuarios que pertenecen a la cuenta BlueXP pueden acceder a estas credenciales desde *Soporte &gt; Gestión NSS*.</block>
   <block id="37ec2d4ffcb59f0218e30feb37bff04e" category="paragraph">Si no tienes un conector y no se puede acceder a la dirección IP desde BlueXP, se te pedirá que crees un conector.</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 de julio de 2023</block>
   <block id="11f4fef53a39b0e83d4fdb9f922e768e" category="section-title">Detección de clúster desde Mi estado</block>
@@ -440,7 +428,6 @@
   <block id="c77ba8df974ac9ac198176dcff4f8f52" category="section-title">Detectar un clúster de forma manual</block>
   <block id="8c3cbd392f1e7d6c008b581f7fc4fc9b" category="paragraph">Para detectar un clúster de ONTAP on-premises en BlueXP, introduzca la dirección IP de administración del clúster y la contraseña de la cuenta de usuario administrador.</block>
   <block id="4e206327ecb5a9834b615078326acaec" category="list-text">En la página Lienzo, selecciona *Añadir entorno de trabajo &gt; En las instalaciones*.</block>
-  <block id="744a5b98e0d4825f191a9e89b609949c" category="paragraph">Si selecciona esta opción, no tendrá que volver a introducir las credenciales cada vez que abra el entorno de trabajo. Estas credenciales solo están asociadas con tu inicio de sesión de usuario de BlueXP. No se guardan para que puedan usarlos nadie más en la cuenta de BlueXP.</block>
   <block id="50bc63d3ce96c1c059c531930e9b1ccc" category="section-title">Añada un clúster detectado previamente</block>
   <block id="9531ad82bf5dc45f66f60a601474ec73" category="paragraph">BlueXP detecta automáticamente información sobre los clústeres de ONTAP asociados con la dirección de correo electrónico para el inicio de sesión de BlueXP y los muestra en la página *Mi estado* como clústeres no detectados. Puede ver la lista de clústeres no detectados y añadirlos de uno en uno.</block>
   <block id="8b88ed64b6b30080910756ab3a0ea719" category="paragraph">Tenga en cuenta lo siguiente acerca de los clústeres de ONTAP locales que aparecen en la página My estate:</block>
@@ -480,7 +467,6 @@
   <block id="17946fbbcc494462c1dfafa59978ba50" category="paragraph">Puede usar la API de BlueXP para crear volúmenes de FlexGroup. Un volumen FlexGroup es un volumen de escalado horizontal que ofrece alto rendimiento junto con la distribución automática de la carga.</block>
   <block id="b72566f4d301c9dec06189b65b061300" category="inline-link">Conozca cómo crear un volumen de FlexGroup con la API</block>
   <block id="67bdff562faa68c471571176e3844346" category="paragraph">Abra un entorno de trabajo ONTAP local y seleccione la opción Vista avanzada.</block>
-  <block id="692e1e106333597b5a86044f5e0af539" category="list-text">En la parte superior derecha, selecciona *Cambiar a vista avanzada*.</block>
   <block id="83f4f85306f8b866c6ddc2026b1a554b" category="list-text">Si aparece el mensaje de confirmación, léalo y selecciona *Cerrar*.</block>
   <block id="e5da9221130cfc01e0feac2117f19695" category="list-text">Si es necesario, selecciona *Cambiar a vista estándar* para volver a la gestión estándar a través de BlueXP.</block>
   <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">En BlueXP, selecciona *Ayuda &gt; Soporte*.</block>
@@ -530,4 +516,26 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
   <block id="74702430dfc941eaabc5007d9e5554f6" category="list-text"><block ref="74702430dfc941eaabc5007d9e5554f6" category="inline-link-rx"></block></block>
   <block id="3ebda767e5f86db4657a423fd661132a" category="list-text">El host de conector debe permitir las conexiones salientes a través del puerto 443 (HTTPS) y el clúster de ONTAP debe permitir el acceso HTTP entrante a través del puerto 443 a la LIF de administración del clúster.</block>
+  <block id="fde1abb5537b55c34521d414267b3f70" category="section-title">Sistemas ASA r2</block>
+  <block id="0bf2301f5cb3996192947186158c2e09" category="paragraph">Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.</block>
+  <block id="d5861f4539296095cd7c9fdfd0c5a2c9" category="paragraph">No hay otras opciones de gestión disponibles con los sistemas ASA R2. No se puede utilizar la vista estándar y no se pueden habilitar los servicios de BlueXP.</block>
+  <block id="989977a18a476a92018e04dd60ec37c1" category="inline-link">Obtenga más información sobre los sistemas R2 de ASA</block>
+  <block id="a7c7539e11570decc041c60258667032" category="paragraph"><block ref="a7c7539e11570decc041c60258667032" category="inline-link-rx"></block></block>
+  <block id="d6d8595ab679ddd5917a4c73498d2be0" category="paragraph">Si selecciona esta opción, no tendrá que volver a introducir las credenciales cada vez que abra el entorno de trabajo. Estas credenciales solo están asociadas con tu inicio de sesión de usuario de BlueXP. No se guardan para que nadie más de la organización de BlueXP  los use.</block>
+  <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">La lista de entornos de trabajo está dentro del ámbito de la organización (o cuenta) de BlueXP , el proyecto (o el espacio de trabajo) y el conector que ha seleccionado en el banner superior del servicio.</block>
+  <block id="44b7ffdcf84f31c030ae673e3b4e8e6e" category="list-text">En el panel de la derecha, en *Servicios*, busque *Administrador del sistema* y seleccione *Abrir*.</block>
+  <block id="8d99550230ec2a9121971b0d13aa8fed" category="inline-image-macro">Una captura de pantalla del lienzo de BlueXP  que muestra la lista de servicios disponibles después de seleccionar un entorno de trabajo de ONTAP local.</block>
+  <block id="471549b55f7b38862ec55e6f446f7278" category="paragraph"><block ref="471549b55f7b38862ec55e6f446f7278" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">Registro del número de serie de su cuenta de BlueXP  (número de serie 960xxxxxxxxx de 20 dígitos que se encuentra en la página de recursos de soporte de BlueXP ).</block>
+  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">Registre BlueXP  para obtener soporte de NetApp</block>
+  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">Para registrarse para obtener soporte y activar los derechos de soporte, un usuario de su organización (o cuenta) de BlueXP  debe asociar una cuenta en el sitio de soporte de NetApp a su inicio de sesión en BlueXP . La forma de registrarse para recibir soporte de NetApp depende de si ya tiene una cuenta del sitio de soporte de NetApp (NSS).</block>
+  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">La página *Recursos* debe mostrar que su organización de BlueXP  está registrada para soporte.</block>
+  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">Tenga en cuenta que los otros usuarios de BlueXP no verán este mismo estado de registro de soporte si no han asociado una cuenta del sitio de soporte de NetApp con su inicio de sesión de BlueXP. Sin embargo, eso no significa que su organización de BlueXP  no esté registrada para el soporte. Siempre y cuando un usuario de la organización haya seguido estos pasos, su organización se ha registrado.</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">Asegúrese de copiar el número de serie de la cuenta (960xxxx) utilizado anteriormente para el campo de número de serie. Esto acelerará el procesamiento.</block>
+  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">Es necesario asociar las credenciales del sitio de soporte de NetApp con su organización de BlueXP  para habilitar los siguientes flujos de trabajo clave para Cloud Volumes ONTAP:</block>
+  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">La asociación de credenciales de NSS a la organización de BlueXP  es diferente de la cuenta de NSS asociada con un inicio de sesión de usuario de BlueXP .</block>
+  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">Estas credenciales de NSS están asociadas con su ID de organización de BlueXP  específico. Los usuarios que pertenecen a la organización BlueXP  pueden acceder a estas credenciales desde *Soporte &gt; Administración de NSS*.</block>
+  <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">7 de octubre de 2024</block>
+  <block id="1e095c69621645fccc8f12cd7f35f6fc" category="section-title">Compatibilidad con los sistemas ASA R2</block>
+  <block id="effcb34ce55a7b0374e99feabbc3c970" category="paragraph">Ahora puede descubrir los sistemas NetApp ASA R2 en BlueXP . Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.</block>
 </blocks>

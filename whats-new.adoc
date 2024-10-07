@@ -18,6 +18,20 @@ Descubre las novedades de la gestión de clústeres de ONTAP en las instalacione
 
 
 
+== 7 de octubre de 2024
+
+
+
+=== Compatibilidad con los sistemas ASA R2
+
+Ahora puede descubrir los sistemas NetApp ASA R2 en BlueXP . Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.
+
+No hay otras opciones de gestión disponibles con los sistemas ASA R2. No se puede utilizar la vista estándar y no se pueden habilitar los servicios de BlueXP.
+
+https://docs.netapp.com/us-en/asa-r2/index.html["Obtenga más información sobre los sistemas R2 de ASA"^]
+
+
+
 == 22 de abril de 2024
 
 

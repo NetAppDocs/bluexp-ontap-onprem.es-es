@@ -130,7 +130,7 @@ Para detectar un clúster de ONTAP on-premises en BlueXP, introduzca la direcci�
 . En la página _Discover_, introduzca la dirección IP de administración del clúster y la contraseña de la cuenta de usuario de administrador.
 . Si está descubriendo el clúster directamente (sin conector), puede seleccionar *Guardar las credenciales*.
 +
-Si selecciona esta opción, no tendrá que volver a introducir las credenciales cada vez que abra el entorno de trabajo. Estas credenciales solo están asociadas con tu inicio de sesión de usuario de BlueXP. No se guardan para que puedan usarlos nadie más en la cuenta de BlueXP.
+Si selecciona esta opción, no tendrá que volver a introducir las credenciales cada vez que abra el entorno de trabajo. Estas credenciales solo están asociadas con tu inicio de sesión de usuario de BlueXP. No se guardan para que nadie más de la organización de BlueXP  los use.
 
 . Seleccione *Discover*.
 +

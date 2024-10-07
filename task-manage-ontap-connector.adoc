@@ -149,9 +149,9 @@ Abra un entorno de trabajo ONTAP local y seleccione la opción Vista avanzada.
 
 .Pasos
 . En la página Canvas, seleccione el clúster de ONTAP en las instalaciones en el que desea aprovisionar volúmenes.
-. En la parte superior derecha, selecciona *Cambiar a vista avanzada*.
+. En el panel de la derecha, en *Servicios*, busque *Administrador del sistema* y seleccione *Abrir*.
 +
-image:screenshot-advanced-view.png["Captura de pantalla de un entorno de trabajo de ONTAP en las instalaciones que muestra la opción Cambiar a vista avanzada."]
+image:screenshot-advanced-view.png["Una captura de pantalla del lienzo de BlueXP  que muestra la lista de servicios disponibles después de seleccionar un entorno de trabajo de ONTAP local."]
 
 . Si aparece el mensaje de confirmación, léalo y selecciona *Cerrar*.
 . Utilice System Manager para gestionar ONTAP.
