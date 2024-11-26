@@ -134,13 +134,11 @@
   <block id="f2e4e4f7b0b864863bfac74f4383a826" category="section-title">Guarde las credenciales de ONTAP</block>
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">Obtenga más información sobre esta opción.</block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">4 de diciembre de 2022</block>
-  <block id="612111851a1740ab34a9d35045621084" category="paragraph">Los siguientes cambios se introdujeron con la versión 3.9.24 del conector.</block>
   <block id="336404297eaddf0051e1d62c3d3bb48e" category="inline-link">Obtenga más información sobre esta opción de detección y gestión</block>
   <block id="ee1ef6cf0f3971b44eb2abcac958fb8d" category="section-title">Volúmenes de FlexGroup</block>
   <block id="2907843476579cb2696e8e0e783a2a07" category="inline-image-macro">Captura de pantalla que muestra un volumen FlexGroup en la página Volumes de un clúster ONTAP en las instalaciones.</block>
   <block id="1c081854506aed2f757f753e779bc45f" category="paragraph">BlueXP no admite la creación de volúmenes de FlexGroup. Tendrá que seguir usando System Manager o la interfaz de línea de comandos para crear volúmenes de FlexGroup.</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 de septiembre de 2022</block>
-  <block id="440be74a67502f9c3d55890782329328" category="paragraph">Los siguientes cambios se introdujeron con la versión 3.9.22 del conector.</block>
   <block id="c8328d07fc05c4708c68f547ce6f5e77" category="section-title">Nueva página Overview</block>
   <block id="8e41db9b51f790909ef80a064153f722" category="paragraph">Hemos introducido una nueva página general para proporcionar detalles clave sobre un clúster de ONTAP en las instalaciones. Por ejemplo, ahora puede ver detalles como la eficiencia del almacenamiento, la distribución de la capacidad y la información del sistema.</block>
   <block id="fba766c98683be4af93f93b5d7909f1e" category="inline-image-macro">Captura de pantalla que muestra la página Descripción general de un clúster ONTAP en las instalaciones.</block>
@@ -148,7 +146,6 @@
   <block id="99cbfcbab5c608668044fc3849d8db46" category="paragraph">Hemos rediseñado la página Volumes para proporcionar un resumen de los volúmenes en un clúster. El resumen muestra el número total de volúmenes, la cantidad de capacidad aprovisionada, la capacidad utilizada y la capacidad reservada, y la cantidad de datos organizados en niveles.</block>
   <block id="2f82cdfc06b6747c85937b5cceabaaee" category="inline-image-macro">Captura de pantalla que muestra la página Volumes de un clúster de ONTAP en las instalaciones.</block>
   <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">7 de junio de 2022</block>
-  <block id="4f03a5c652641013d1e43811930f5769" category="paragraph">Se ha introducido el siguiente cambio con la versión 3.9.19 del conector.</block>
   <block id="ffe3ec3b5faef58a758d9449470882a0" category="section-title">Nueva vista avanzada</block>
   <block id="5549a52d6578bcb66138c7319ef4ea11" category="paragraph">Si necesita realizar una gestión avanzada de un clúster local de ONTAP, puede hacerlo mediante System Manager de ONTAP, que es una interfaz de gestión proporcionada con un sistema ONTAP. Hemos incluido la interfaz de System Manager directamente dentro de Cloud Manager para que no tenga que salir de Cloud Manager para disfrutar de una gestión avanzada.</block>
   <block id="99721ad2e6d601b2966a9d9e1c7de770" category="paragraph">Esta vista avanzada está disponible como una vista previa con clústeres de ONTAP en las instalaciones que ejecutan 9.10.0 o posterior. Tenemos pensado perfeccionar esta experiencia y añadir mejoras en próximos lanzamientos. Envíenos sus comentarios mediante el chat en el producto.</block>
@@ -540,6 +537,8 @@
   <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="list-text">La detección de sistemas ASA R2 no es compatible cuando se usa BlueXP  en el modo privado.</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">Obtenga más información sobre los modos de implementación de BlueXP</block>
   <block id="d3342e15149bfef7fd9289d7025e506e" category="list-text"><block ref="d3342e15149bfef7fd9289d7025e506e" category="inline-link-rx"></block></block>
-  <block id="4f59dac344ae97a32d47fe32ee94249f" category="list-text">Puede detectar los sistemas NetApp ASA R2 en BlueXP  cuando se utiliza BlueXP  en modo estándar o restringido. La detección de sistemas ASA R2 no es compatible cuando se usa BlueXP  en el modo privado.</block>
   <block id="0c02bcea354671c5372f06a37c547a7d" category="paragraph">Ahora puede detectar los sistemas NetApp ASA R2 en BlueXP  cuando se utiliza BlueXP  en modo estándar o restringido. Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.</block>
+  <block id="613fbbb3f2dbf238c8527a537252e8ed" category="doc">Compatibilidad con sistemas ASA R2 con modo privado</block>
+  <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">Ahora puede descubrir los sistemas NetApp ASA R2 al utilizar BlueXP  en modo privado. Esta asistencia está disponible a partir de la versión 3.9.46 del modo privado de BlueXP .</block>
+  <block id="d415b73567ff8e090cdf21c20afeaa64" category="section-title">26 de noviembre de 2024</block>
 </blocks>

@@ -18,6 +18,20 @@ Descubre las novedades de la gestión de clústeres de ONTAP en las instalacione
 
 
 
+== 26 de noviembre de 2024
+
+
+
+=== Compatibilidad con sistemas ASA R2 con modo privado
+
+Ahora puede descubrir los sistemas NetApp ASA R2 al utilizar BlueXP  en modo privado. Esta asistencia está disponible a partir de la versión 3.9.46 del modo privado de BlueXP .
+
+* https://docs.netapp.com/us-en/asa-r2/index.html["Obtenga más información sobre los sistemas R2 de ASA"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"^]
+
+
+
+
 == 7 de octubre de 2024
 
 
