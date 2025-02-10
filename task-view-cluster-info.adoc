@@ -16,26 +16,4 @@ summary: La cartera digital de BlueXP te permite ver los detalles del contrato d
 [role="lead"]
 La cartera digital de BlueXP te permite ver los detalles del contrato de cada uno de tus clústeres de ONTAP on-premises. Si todavía no has detectado un clúster en BlueXP, también puedes hacerlo desde la cartera digital.
 
-.Antes de empezar
-La cartera digital de BlueXP muestra detalles sobre los clústeres de ONTAP on-premises que has detectado como entorno de trabajo o que están asociados a una cuenta del sitio de soporte de NetApp que has añadido a BlueXP.
-
-.Pasos
-. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
-. Seleccione *On-local ONTAP*.
-+
-Si se le pide que introduzca primero sus credenciales de cuenta del sitio de soporte de NetApp (NSS), introdúzcalas en la consola de soporte. Después de añadir la cuenta, se muestran los clústeres que se incluyen en esa cuenta.
-
-+
-Las fechas de vencimiento del contrato de software y del contrato de hardware aparecen en la línea de cada clúster.
-
-+
-image:screenshot_digital_wallet_onprem_main.png["Una captura de pantalla de cómo ampliar los detalles del clúster para poder ver la información de la licencia del clúster."]
-
-. Si aún no ha descubierto un clúster como entorno de trabajo, seleccione *Descubrir* y siga las indicaciones.
-+
-Después de detectar un clúster, este está disponible como entorno de trabajo en BlueXP para poder gestionarlo.
-
-
-
-.Enlace relacionado
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["Obtén más información sobre la gestión de licencias para clústeres de ONTAP on-premises desde la cartera digital de BlueXP"^]
