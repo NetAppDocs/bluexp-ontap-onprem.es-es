@@ -21,7 +21,7 @@ BlueXP puede detectar los clústeres de ONTAP que se ejecutan en controladoras A
 == Funciones
 
 * Gestione volúmenes NFS y CIFS
-* Lleve a cabo una gestión avanzada mediante System Manager de ONTAP
+* Acceda a ONTAP System Manager para cualquier clúster administrado a través de BlueXP
 * Obtenga observabilidad de la salud y el rendimiento con el análisis y control de BlueXP
 * Utiliza los servicios de BlueXP para replicar, hacer backups, escanear, clasificar y organizar los datos en niveles
 * Consulta la información del estado de los contratos de hardware y software en la cartera digital de BlueXP
@@ -35,7 +35,7 @@ Un coste puede estar asociado, pero depende de lo siguiente:
 
 * Si implementa un conector para detectar y gestionar los clústeres.
 +
-Puede instalar el conector en la nube o en sus instalaciones.
+Puede instalar el Conector en la nube o en sus instalaciones. La instalación de un Conector en la nube conlleva un coste.
 
 * Tanto si usas servicios de BlueXP, como el backup y la recuperación de datos, la organización en niveles y la clasificación.
 

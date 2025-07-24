@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-remove-on-prem.html 
-keywords: ontap, cluster, remove, delete, remove ontap cluster, remove onprem, delete cluster, delete working environment, remove working environment 
+keywords: ontap, cluster, remove, delete, remove ontap cluster, remove onprem, delete cluster, delete working environment, remove working environment, storage admin 
 summary: Elimine un entorno de trabajo ONTAP en las instalaciones si ya no quiere gestionarlo desde BlueXP. 
 ---
 = Quitar un entorno de trabajo de ONTAP en las instalaciones
@@ -15,6 +15,9 @@ summary: Elimine un entorno de trabajo ONTAP en las instalaciones si ya no quier
 
 [role="lead"]
 Elimine un entorno de trabajo ONTAP en las instalaciones si ya no quiere gestionarlo desde BlueXP.
+
+.Rol BlueXP requerido:
+Administrador de la organización, administrador de carpeta o proyecto, o administrador de almacenamiento. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso de BlueXP ."^]
 
 La eliminación del entorno de trabajo no afecta al clúster de ONTAP. Usted puede redescubrir de BlueXP en cualquier momento.
 

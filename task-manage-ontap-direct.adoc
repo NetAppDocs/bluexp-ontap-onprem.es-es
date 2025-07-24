@@ -14,7 +14,10 @@ summary: Si ha detectado el clúster de ONTAP en las instalaciones directamente 
 
 
 [role="lead"]
-Si ha detectado el clúster de ONTAP en las instalaciones directamente sin utilizar un conector, puede abrir el entorno de trabajo para administrar el clúster mediante System Manager.
+Si descubrió su clúster ONTAP local directamente sin usar un conector, puede abrir el entorno de trabajo para administrar el clúster mediante el Administrador del sistema ONTAP .
+
+.Rol BlueXP requerido:
+Administrador de la organización, administrador de carpetas o proyectos, administrador de almacenamiento o especialista en estado del sistema. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso de BlueXP ."^]
 
 .Antes de empezar
 El equipo que está utilizando para acceder a la consola BlueXP debe tener una conexión de red al clúster ONTAP en las instalaciones, de forma similar a cómo proporcionaría conexiones a otros recursos de su red privada.
@@ -34,7 +37,7 @@ image:screenshot-direct-discovery-we.png["Captura de pantalla del icono de entor
 
 . Si se le solicita, introduzca sus credenciales de ONTAP.
 +
-Se le pedirá que inicie sesión con sus credenciales de ONTAP cada vez que abra el entorno de trabajo, si no guarda las credenciales. Tiene la opción de guardar las credenciales para no tener que introducirlas cada vez. Si utiliza esta opción, las credenciales sólo estarán asociadas al usuario de BlueXP. No se guardan para su uso por parte de nadie más de su cuenta.
+Se le solicitará que inicie sesión con sus credenciales de ONTAP cada vez que abra el entorno de trabajo si no las guarda. Puede guardarlas para no tener que ingresarlas cada vez. Puede administrarlas en la página Credenciales de usuario. En algunos casos, es posible que su administrador de BlueXP (rol de administrador de la organización) haya desactivado esta opción y le solicite que ingrese sus credenciales cada vez.
 
 +
 image:screenshot-credentials.png["Captura de pantalla que muestra la solicitud de introducir el nombre de usuario y la contraseña de un clúster de ONTAP."]

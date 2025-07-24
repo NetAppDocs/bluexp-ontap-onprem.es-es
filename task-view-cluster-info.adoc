@@ -16,4 +16,7 @@ summary: La cartera digital de BlueXP te permite ver los detalles del contrato d
 [role="lead"]
 La cartera digital de BlueXP te permite ver los detalles del contrato de cada uno de tus clústeres de ONTAP on-premises. Si todavía no has detectado un clúster en BlueXP, también puedes hacerlo desde la cartera digital.
 
+.Rol BlueXP requerido:
+Administrador de la organización, o administrador de carpeta o proyecto. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso de BlueXP ."^]
+
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["Obtén más información sobre la gestión de licencias para clústeres de ONTAP on-premises desde la cartera digital de BlueXP"^]
